@@ -1,0 +1,26 @@
+body{
+    background-color: var(--bg);
+    font-family: var(--primary-font);
+    color: var(--text);
+}
+.container {
+    width: 95%;
+    margin: auto;
+    padding: 0px;
+}
+section{
+    height: 100vh;
+}
+.banner-container {
+    width: 87%;
+    margin: auto;
+    padding: 0px;
+}
+.nav-container {
+    width: 87%;
+    margin: auto;
+    padding: 0px;
+}
+.padding{
+    padding: 60px 0px;
+}

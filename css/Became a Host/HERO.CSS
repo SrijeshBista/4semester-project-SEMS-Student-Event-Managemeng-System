@@ -10,6 +10,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: 100vh;
+    background: red !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .host-hero-content {

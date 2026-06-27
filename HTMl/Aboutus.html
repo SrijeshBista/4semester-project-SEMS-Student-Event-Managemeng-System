@@ -8,62 +8,126 @@
     <title>SEMS</title>
 </head>
 <body>
-     <header>
+
+    <!-- header part -->
+    <header>
       <div class="nav-container">
         <nav>
-          <!-- Navigation bar logo -->
+          <!-- Logo -->
+          <div class="nav-logo">
+            <a href="Homepage.html">
+              <img src="../img/logo.png" alt="Logo" />
+            </a>
+          </div>
 
-           <!-- Logo -->
-    <div class="nav-logo">
-        <a href="Homepage.html">
-            <img src="../img/logo.png" alt="Logo">
-        </a>
-    </div>
+          <!-- Desktop Navigation -->
+          <div class="nav-bar">
+            <ul>
+              <li><a href="Homepage.html">Home</a></li>
+              <li><a href="Aboutus.html">About</a></li>
+              <li><a href="Events.html">Events</a></li>
+              <li><a href="Contactus.html">Contact Us</a></li>
+            </ul>
+          </div>
 
-    <!-- Desktop Navigation -->
-    <div class="nav-bar">
-        <ul>
+          <!-- Right Side -->
+          <div class="nav-button">
+            <button class="login-btn">Login</button>
+            <!-- Hamburger -->
+            <div class="ham-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu (outside nav, inside nav-container) -->
+        <div class="off-screen-menu">
+          <div class="close-menu">
+            <span>&times;</span>
+          </div>
+          <ul>
             <li><a href="Homepage.html">Home</a></li>
             <li><a href="Aboutus.html">About</a></li>
             <li><a href="Events.html">Events</a></li>
             <li><a href="Contactus.html">Contact Us</a></li>
-        </ul>
-    </div>
-
-    <!-- Right Side -->
-    <div class="nav-button">
-
-        <button class="login-btn">Login</button>
-
-        <!-- Hamburger -->
-        <div class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <li><button class="mobile-login">Login</button></li>
+          </ul>
         </div>
-
-    </div>
-
-</nav>
-
-<!-- Mobile Menu -->
-<div class="off-screen-menu">
-  <div class="close-menu">
-        <span>&times;</span>
-    </div>
-
-    <ul>
-        <li><a href="Homepage.html">Home</a></li>
-        <li><a href="Aboutus.html">About</a></li>
-        <li><a href="Events.html">Events</a></li>
-        <li><a href="Contactus.html">Contact Us</a></li>
-        <li><button class="mobile-login">Login</button></li>
-    </ul>
-
-</div>
-        </nav>
       </div>
     </header>
+
+
+    
+    <!-- Footer Section -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-main">
+          <!-- Logo -->
+
+          <div class="footer-about">
+            <img src="../img/logo.png" alt="Logo" />
+
+            <p>
+              Student Event Management System (SEMS) helps students, event
+              organizers, and administrators manage college events efficiently
+              through a single platform.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+
+            <ul>
+              <li><a href="Homepage.html">Home</a></li>
+
+              <li><a href="Aboutus.html">About</a></li>
+
+              <li><a href="Events.html">Events</a></li>
+
+              <li><a href="Contactus.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+
+          <div class="footer-services">
+            <h3>Services</h3>
+
+            <ul>
+              <li>Student Registration</li>
+
+              <li>Host Management</li>
+
+              <li>Event Approval</li>
+
+              <li>Event Registration</li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+
+          <div class="footer-contact">
+            <h3>Contact</h3>
+
+            <p>📍 Kathmandu, Nepal</p>
+
+            <p>📧 timescollegeinfo@gmail.com</p>
+
+            <p>📞 +977-9841758496</p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom">
+          <p>© 2026 Student Event Management System. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="../JS/Style.js"></script>
 </body>

@@ -2,7 +2,7 @@
 #contact-hero {
   margin-top: 160px;
   min-height: 55vh;
-    border-radius: 35px;
+    /* border-radius: 35px; */
   background:
     linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.72)),
     url("../../img/contact-banner.jpg");

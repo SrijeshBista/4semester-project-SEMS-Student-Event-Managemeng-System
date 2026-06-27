@@ -2,6 +2,7 @@ body{
     background-color: var(--bg);
     font-family: var(--primary-font);
     color: var(--text);
+    margin: 0;
 }
 .container {
     width: 95%;
@@ -21,6 +22,27 @@ section{
     margin: auto;
     padding: 0px;
 }
-/* .padding{
-    padding: 60px 0px;
-} */
+.back-home{
+    position:absolute;
+    top:30px;
+    left:20px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:600;
+    transition:.3s;
+    z-index:1000;
+    border: 1px solid var(--primary);
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 35px;
+}
+
+.back-home:hover{
+    background-color:var(--primary-dark);
+    transform:translateX(-5px);
+
+}

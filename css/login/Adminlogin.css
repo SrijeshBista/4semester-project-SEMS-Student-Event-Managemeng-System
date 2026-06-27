@@ -1,0 +1,160 @@
+#login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.login-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.login-left {
+  width: 50%;
+}
+
+.login-left img {
+  width: 100%;
+}
+
+.login-right {
+  width: 50%;
+  background: #fff;
+  padding: 45px;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.login-right h2 {
+  font-size: 2.7rem;
+  margin-bottom: 15px;
+}
+
+.login-right p {
+  color: #64748b;
+  margin-bottom: 35px;
+  line-height: 1.8;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd5e1;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.input-box i {
+  color: var(--primary);
+  margin-right: 12px;
+}
+
+.input-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: none;
+  box-sizing: border-box;
+}
+
+.login-option {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.login-option a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.login-right button {
+  width: 100%;
+  padding: 16px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.login-right button:hover {
+  background: var(--primary-dark);
+}
+
+.login-links {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.login-links p {
+  margin-top: 15px;
+}
+
+.login-links a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-home {
+  position: fixed;
+  top: 30px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  z-index: 100;
+}
+
+.back-home:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Responsive  */
+@media (max-width: 992px) {
+  .login-main {
+    flex-direction: column;
+  }
+
+  .login-left,
+  .login-right {
+    width: 100%;
+  }
+
+  .login-left {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-right {
+    padding: 30px 20px;
+  }
+
+  .login-right h2 {
+    font-size: 2rem;
+  }
+
+  .login-option {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .back-home {
+    left: 20px;
+
+    top: 20px;
+  }
+}

@@ -3,7 +3,7 @@
 #about-hero{
     margin-top:160px;
     height:85vh;
-
+    
     background:
     linear-gradient(
     rgba(10,20,40,.70),
@@ -12,7 +12,7 @@
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-    border-radius: 35px;
+    /* border-radius: 35px; */
     display:flex;
     align-items:center;
     position:relative;

@@ -1,0 +1,64 @@
+#host-hero {
+   position: relative;
+  min-height: 60vh;
+  background:
+    linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)),
+    url("../../img/host-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.host-hero-content {
+  max-width: 850px;
+  color: #fff;
+}
+
+.host-hero-content span {
+  display: inline-block;
+  padding: 10px 22px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.host-hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 25px;
+  font-family: var(--primary-font);
+}
+
+.host-hero-content p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #e2e8f0;
+}
+/* Responsive  */
+
+@media (max-width: 768px) {
+  #host-hero {
+    min-height: 50vh;
+  }
+
+  .host-hero-content h1 {
+    font-size: 2.7rem;
+  }
+
+  .host-hero-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .host-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .host-hero-content span {
+    font-size: 13px;
+  }
+}

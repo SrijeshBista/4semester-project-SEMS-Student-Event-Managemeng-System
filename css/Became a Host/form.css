@@ -1,0 +1,153 @@
+#host-application {
+  padding: 100px 0;
+  height: fit-content;
+  background: #f8fafc;
+}
+
+.host-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+
+.host-left {
+  width: 45%;
+}
+
+.host-left span {
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.host-left h2 {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.host-left p {
+  color: #64748b;
+  line-height: 1.9;
+  margin-bottom: 35px;
+}
+
+.host-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 600;
+}
+
+.benefit i {
+  color: var(--primary);
+}
+
+.host-left img {
+  width: 100%;
+}
+
+/* RIGHT */
+
+.host-right {
+  width: 55%;
+}
+
+.host-right form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.host-right h2 {
+  margin-bottom: 25px;
+}
+
+.host-right input,
+.host-right select,
+.host-right textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.host-right input:focus,
+.host-right select:focus,
+.host-right textarea:focus {
+  border-color: var(--primary);
+  
+}
+
+.host-right textarea {
+  resize: none;
+}
+
+.host-right button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.host-right button:hover {
+  background: var(--primary-dark);
+}
+/* Resposnive  */
+@media (max-width: 992px) {
+  .host-main {
+    flex-direction: column;
+  }
+
+  .host-left,
+  .host-right {
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .host-right form {
+    padding: 30px;
+  }
+
+  .host-left {
+    text-align: center;
+  }
+
+  .benefit {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  #host-application {
+    padding: 70px 0;
+  }
+
+  .host-left h2 {
+    font-size: 2rem;
+  }
+
+  .host-right form {
+    padding: 20px;
+  }
+  
+}

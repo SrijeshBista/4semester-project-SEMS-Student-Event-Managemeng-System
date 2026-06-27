@@ -1,6 +1,4 @@
-/* ============================
-        ABOUT SECTION
-============================ */
+/* ABOUT SECTION */
 
 #aboutus {
     height: fit-content;
@@ -163,7 +161,7 @@
 
 .aboutus-main{
     flex-direction:column;
-    text-align:center;
+    /* text-align:center; */
 }
 
 .about-left,

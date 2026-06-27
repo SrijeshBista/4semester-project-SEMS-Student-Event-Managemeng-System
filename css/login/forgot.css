@@ -1,0 +1,150 @@
+#forgot-password {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.forgot-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+/* Left */
+
+.forgot-left {
+  width: 50%;
+}
+
+.forgot-left img {
+  width: 100%;
+}
+
+/* Right */
+
+.forgot-right {
+  width: 50%;
+  background: #fff;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.forgot-right h2 {
+  font-size: 2.7rem;
+  margin-bottom: 15px;
+  font-family: var(--primary-font);
+}
+
+.forgot-right p {
+  color: #64748b;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.input-box i {
+  color: var(--primary);
+  margin-right: 12px;
+}
+
+.input-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 15px;
+}
+
+.input-box:focus-within {
+  border-color: var(--primary);
+}
+
+.forgot-right button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.forgot-right button:hover {
+  background: var(--primary-dark);
+}
+
+.login-link {
+  margin-top: 25px;
+
+  text-align: center;
+}
+
+.login-link a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Back */
+
+.back-home {
+  position: fixed;
+  top: 30px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color:#fff;
+  font-weight: 600;
+  z-index: 100;
+}
+
+.back-home:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .forgot-main {
+    flex-direction: column;
+  }
+
+  .forgot-left,
+  .forgot-right {
+    width: 100%;
+  }
+
+  .forgot-left {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .forgot-right {
+    padding: 25px;
+  }
+
+  .forgot-right h2 {
+    font-size: 2rem;
+  }
+
+  .back-home {
+    top: 20px;
+    left: 20px;
+  }
+}

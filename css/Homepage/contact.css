@@ -1,0 +1,201 @@
+#contact {
+  padding: 80px 0;
+  background: #fff;
+  height: fit-content;
+}
+
+.contact-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-heading h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-family: var(--primary-font);
+}
+
+.contact-heading p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* Layout */
+
+.contact-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* Left */
+
+.contact-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-card {
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.18);
+}
+
+.contact-card h3 {
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.contact-card p {
+  line-height: 1.7;
+}
+
+/* Right */
+
+.contact-right {
+  width: 60%;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.2);
+}
+
+.contact-right textarea {
+  resize: none;
+}
+
+.contact-right button {
+  width: 220px;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-right button:hover {
+  background: var(--primary-dark);
+
+  transform: translateY(-3px);
+}
+
+/* responsive  */
+@media(max-width:1024px){
+
+.contact-main{
+
+    gap:35px;
+
+}
+
+.contact-left{
+
+    width:45%;
+
+}
+
+.contact-right{
+
+    width:55%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-main{
+
+    flex-direction:column;
+
+}
+
+.contact-left,
+.contact-right{
+
+    width:100%;
+
+}
+
+.contact-heading h2{
+
+    font-size:2.4rem;
+
+}
+
+.contact-right button{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:576px){
+
+#contact{
+
+    padding:60px 0;
+
+}
+
+.contact-heading h2{
+
+    font-size:2rem;
+
+}
+
+.contact-heading p{
+
+    font-size:15px;
+
+}
+
+.contact-card{
+
+    padding:20px;
+
+}
+
+.contact-right input,
+.contact-right textarea{
+
+    padding:12px;
+
+}
+
+}

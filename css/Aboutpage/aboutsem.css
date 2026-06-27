@@ -1,0 +1,174 @@
+/* about sem css  */
+#about-sems {
+    height: fit-content;
+  padding: 100px 0;
+}
+
+.about-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.about-image {
+  width: 50%;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.about-content {
+  width: 50%;
+}
+
+.about-content span {
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.about-content h2 {
+  font-size: 2.8rem;
+  margin: 15px 0 20px;
+  font-family: var(--primary-font);
+}
+
+.about-content p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.about-feature-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.about-feature-list div {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.about-feature-list div:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Responsive  */
+/* Laptop */
+
+@media screen and (max-width: 992px) {
+
+    #about-sems{
+        padding: 80px 0;
+    }
+
+    .about-main{
+        gap: 40px;
+    }
+
+    .about-content h2{
+        font-size: 2.3rem;
+    }
+
+    .about-content p{
+        font-size: 16px;
+    }
+
+}
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+
+    #about-sems{
+        padding: 70px 0;
+    }
+
+    .about-main{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-image,
+    .about-content{
+        width: 100%;
+    }
+
+    .about-content{
+        text-align: center;
+    }
+
+    .about-content h2{
+        font-size: 2rem;
+    }
+
+    .about-content p{
+        font-size: 16px;
+    }
+
+    .about-feature-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+/* Mobile */
+
+@media screen and (max-width: 576px) {
+
+    #about-sems{
+        padding: 60px 0;
+    }
+
+    .about-main{
+        gap: 30px;
+    }
+
+    .about-content h2{
+        font-size: 1.8rem;
+    }
+
+    .about-content p{
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .about-feature-list{
+        grid-template-columns: 1fr;
+    }
+
+    .about-feature-list div{
+        padding: 14px;
+        font-size: 15px;
+    }
+
+}
+
+/* Small Mobile */
+
+@media screen and (max-width: 380px){
+
+    .about-content h2{
+        font-size: 1.6rem;
+    }
+
+    .about-content p{
+        font-size: 14px;
+    }
+
+    .about-feature-list div{
+        font-size: 14px;
+        padding: 12px;
+    }
+
+}

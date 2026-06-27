@@ -1,5 +1,5 @@
 #footer{
-
+    border-radius: 35px;
     background:#1E293B;
     color:#fff;
     padding:70px 0 20px;
@@ -92,6 +92,55 @@ hr{
     text-align:center;
     color:#94a3b8;
     font-size:15px;
+
+}
+.footer-contact{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.footer-contact h3{
+
+    margin-bottom:25px;
+
+}
+
+.contact-item{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+
+}
+
+.contact-item i{
+
+    width:45px;
+    height:45px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(37,99,235,.15);
+    color:var(--primary);
+
+    border-radius:50%;
+
+    font-size:18px;
+
+    flex-shrink:0;
+
+}
+
+.contact-item span{
+
+    color:#cbd5e1;
+    line-height:1.6;
+    font-size:16px;
 
 }
 

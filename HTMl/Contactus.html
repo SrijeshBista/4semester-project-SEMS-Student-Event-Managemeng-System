@@ -1,70 +1,276 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/Style.css">
-    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Style.css" />
+    <link rel="icon" href="../img/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <title>SEMS</title>
-</head>
-<body>
-     <header>
+  </head>
+  <body>
+    <!-- header part -->
+    <header>
       <div class="nav-container">
         <nav>
-          <!-- Navigation bar logo -->
+          <!-- Logo -->
+          <div class="nav-logo">
+            <a href="Homepage.html">
+              <img src="../img/logo.png" alt="Logo" />
+            </a>
+          </div>
 
-           <!-- Logo -->
-    <div class="nav-logo">
-        <a href="Homepage.html">
-            <img src="../img/logo.png" alt="Logo">
-        </a>
-    </div>
+          <!-- Desktop Navigation -->
+          <div class="nav-bar">
+            <ul>
+              <li><a href="Homepage.html">Home</a></li>
+              <li><a href="Aboutus.html">About</a></li>
+              <li><a href="Events.html">Events</a></li>
+              <li><a href="Contactus.html">Contact Us</a></li>
+            </ul>
+          </div>
 
-    <!-- Desktop Navigation -->
-    <div class="nav-bar">
-        <ul>
+          <!-- Right Side -->
+          <div class="nav-button">
+            <button class="login-btn">
+              <a href="./Login&signup/Adminlogin.html">Login</a>
+            </button>
+            <!-- Hamburger -->
+            <div class="ham-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu (outside nav, inside nav-container) -->
+        <div class="off-screen-menu">
+          <div class="close-menu">
+            <span>&times;</span>
+          </div>
+          <ul>
             <li><a href="Homepage.html">Home</a></li>
             <li><a href="Aboutus.html">About</a></li>
             <li><a href="Events.html">Events</a></li>
             <li><a href="Contactus.html">Contact Us</a></li>
-        </ul>
-    </div>
-
-    <!-- Right Side -->
-    <div class="nav-button">
-
-        <button class="login-btn">Login</button>
-
-        <!-- Hamburger -->
-        <div class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <li>
+              <button class="mobile-login">
+                <a href="./Login&signup/Adminlogin.html">Login</a>
+              </button>
+            </li>
+          </ul>
         </div>
-
-    </div>
-
-</nav>
-
-<!-- Mobile Menu -->
-<div class="off-screen-menu">
-  <div class="close-menu">
-        <span>&times;</span>
-    </div>
-
-    <ul>
-        <li><a href="Homepage.html">Home</a></li>
-        <li><a href="Aboutus.html">About</a></li>
-        <li><a href="Events.html">Events</a></li>
-        <li><a href="Contactus.html">Contact Us</a></li>
-        <li><button class="mobile-login">Login</button></li>
-    </ul>
-
-</div>
-        </nav>
       </div>
     </header>
 
+    <!-- Contact Banner  -->
+
+    <section id="contact-hero">
+      <div class="container">
+        <div class="contact-hero-content">
+          <span>GET IN TOUCH</span>
+
+          <h1>Contact Us</h1>
+
+          <p>
+            Have questions about events or need assistance? We're here to help
+            you. Reach out to our team anytime.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Info  -->
+    <section id="contact-info">
+      <div class="container">
+        <div class="section-title">
+          <h2>Get In Touch</h2>
+
+          <p>
+            We'd love to hear from you. Feel free to contact us through any of
+            the following methods.
+          </p>
+        </div>
+
+        <div class="contact-info-main">
+          <!-- Address -->
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <h3>Address</h3>
+
+            <p>Dillibazar, Kathmandu, Nepal</p>
+          </div>
+
+          <!-- Email -->
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <h3>Email</h3>
+
+            <p>semsinfo@gmail.com</p>
+          </div>
+
+          <!-- Phone -->
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <h3>Phone</h3>
+
+            <p>+977-9841758496</p>
+          </div>
+
+          <!-- Office -->
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+
+            <h3>Office Hours</h3>
+
+            <p>
+              Sun - Fri <br />
+              9:00 AM - 5:00 PM
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form  -->
+    <section id="contact-form">
+      <div class="container">
+        <div class="contact-form-main">
+          <div class="form-left">
+            <span>CONTACT FORM</span>
+
+            <h2>Send Us a Message</h2>
+
+            <p>
+              Have a question, suggestion, or need support? Fill out the form
+              below, and we'll get back to you as soon as possible.
+            </p>
+          </div>
+
+          <div class="form-right">
+            <form action="#">
+              <div class="input-group">
+                <input type="text" placeholder="Full Name" required />
+
+                <input type="email" placeholder="Email Address" required />
+              </div>
+
+              <div class="input-group">
+                <input type="text" placeholder="Subject" required />
+
+                <input type="tel" placeholder="Phone Number" />
+              </div>
+
+              <textarea
+                rows="8"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-main">
+          <!-- Logo -->
+
+          <div class="footer-about">
+            <img src="../img/logo.png" alt="Logo" />
+
+            <p>
+              Student Event Management System (SEMS) helps students, event
+              organizers, and administrators manage college events efficiently
+              through a single platform.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+
+            <ul>
+              <li><a href="Homepage.html">Home</a></li>
+
+              <li><a href="Aboutus.html">About</a></li>
+
+              <li><a href="Events.html">Events</a></li>
+
+              <li><a href="Contactus.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+
+          <div class="footer-services">
+            <h3>Services</h3>
+
+            <ul>
+              <li>Student Registration</li>
+
+              <li>Host Management</li>
+
+              <li>Event Approval</li>
+
+              <li>Event Registration</li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+
+          <div class="footer-contact">
+            <h3>Contact</h3>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Kathmandu, Nepal</span>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>timescollegeinfo@gmail.com</span>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+977-9841758496</span>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom">
+          <p>© 2026 Student Event Management System. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
     <script src="../JS/Style.js"></script>
-</body>
+  </body>
 </html>

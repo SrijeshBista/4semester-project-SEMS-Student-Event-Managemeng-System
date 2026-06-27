@@ -114,20 +114,23 @@
   color: var(--white);
   border: 1px solid #fff;
   border-radius: 12px;
-
   padding: 14px 28px;
-
   font-size: 1rem;
   font-weight: 600;
-
   cursor: pointer;
-
   transition: all 400ms ease-in-out;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 .secondary-btn:hover {
   padding: 14px 28px;
   background: var(--primary);
   border: 1px solid var(--primary);
+  a {
+    color: var(--primary);
+  }
 }
 
 /* Responsive Design */
@@ -270,8 +273,8 @@
     top: 60%;
     left: 50%;
   }
-  .title{}
-  
+  .title {
+  }
 }
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
   #banner {

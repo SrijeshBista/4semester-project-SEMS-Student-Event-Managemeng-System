@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/Style.css" />
     <link rel="icon" href="../img/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <title>SEMS</title>
   </head>
   <body>
@@ -31,7 +35,9 @@
 
           <!-- Right Side -->
           <div class="nav-button">
-            <button class="login-btn">Login</button>
+            <button class="login-btn">
+              <a href="./Login&signup/Adminlogin.html">Login</a>
+            </button>
             <!-- Hamburger -->
             <div class="ham-menu">
               <span></span>
@@ -51,7 +57,11 @@
             <li><a href="Aboutus.html">About</a></li>
             <li><a href="Events.html">Events</a></li>
             <li><a href="Contactus.html">Contact Us</a></li>
-            <li><button class="mobile-login">Login</button></li>
+            <li>
+              <button class="mobile-login">
+                <a href="./Login&signup/Adminlogin.html">Login</a>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -80,7 +90,9 @@
             <button class="primary-btn">
               <a href="Events.html">Events</a>
             </button>
-            <button class="secondary-btn">Become Host</button>
+            <button class="secondary-btn">
+              <a href="./Login&signup/Becomehost.html">Become Host</a>
+            </button>
           </div>
         </div>
       </div>
@@ -97,7 +109,7 @@
         </div>
         <div class="aboutus-main">
           <div class="about-left">
-            <div class="about-image">
+            <div class="about-img">
               <img src="../img/aboutsection.png" alt="About SEMS" />
             </div>
           </div>
@@ -116,7 +128,9 @@
                 <div class="feature">✅ Event Management Dashboard</div>
                 <div class="feature">✅ Fast Communication</div>
               </div>
-              <button class="primarybtn">Learn More ....</button>
+              <button class="primarybtn">
+                <a href="Aboutus.html">Learn More ....</a>
+              </button>
             </div>
           </div>
         </div>
@@ -278,7 +292,6 @@
     </section>
 
     <!-- Footer Section -->
-
     <footer id="footer">
       <div class="container">
         <div class="footer-main">
@@ -331,11 +344,20 @@
           <div class="footer-contact">
             <h3>Contact</h3>
 
-            <p>📍 Kathmandu, Nepal</p>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Kathmandu, Nepal</span>
+            </div>
 
-            <p>📧 timescollegeinfo@gmail.com</p>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>timescollegeinfo@gmail.com</span>
+            </div>
 
-            <p>📞 +977-9841758496</p>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+977-9841758496</span>
+            </div>
           </div>
         </div>
 

@@ -1,0 +1,100 @@
+/*  Welcome Section */
+
+.welcome-section {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-text h1 {
+  font-size: 34px;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.welcome-text p {
+  color: #64748b;
+  line-height: 1.8;
+}
+
+/* Dashboard Cards */
+
+.dashboard-cards {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    align-items:start;
+    height: fit-content;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.blue {
+  background: #2563eb;
+}
+
+.green {
+  background: #10b981;
+}
+
+.orange {
+  background: #f59e0b;
+}
+
+.purple {
+  background: #8b5cf6;
+}
+
+.card-info h2 {
+  font-size: 30px;
+  color: #1e293b;
+}
+
+.card-info p {
+  color: #64748b;
+  margin-top: 5px;
+}
+
+/* Responsive  */
+
+@media (max-width: 992px) {
+  .dashboard-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-text h1 {
+    font-size: 28px;
+  }
+}

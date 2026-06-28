@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../css/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="icon" href="../../../img/logo.png" type="image/x-icon" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- Dashboard Navbar -->
+
+    <header id="dashboard-navbar">
+      <div class="container">
+        <div class="dashboard-nav">
+          <!-- Logo -->
+
+          <div class="nav-logo">
+            <a href="../Homepage.html">
+              <img src="../../../img/logo.png" alt="SEMS Logo" />
+            </a>
+          </div>
+
+          <!-- Title -->
+
+          <div class="dashboard-title">
+            <h2>Student Dashboard</h2>
+          </div>
+
+          <!-- Hamburger -->
+
+          <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <!-- Right Side -->
+
+          <div class="dashboard-profile">
+            <a href="#" class="notification">
+              <i class="fa-solid fa-bell"></i>
+            </a>
+
+            <div class="profile-info">
+              <img src="../../../img/student-avatar.png" alt="Student" />
+
+              <span>Srijesh</span>
+
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sidebar  -->
+    <div class="sidebar-overlay"></div>
+    <div class="dashboard-container">
+      <!-- Sidebar -->
+
+      <aside class="sidebar">
+        <ul>
+          <li class="active">
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+              Dashboard
+            </a>
+          </li>
+
+          <li >
+            <a href="./student/studentevent.html">
+              <i class="fa-solid fa-calendar-days"></i>
+              Events
+            </a>
+          </li>
+
+          <li>
+            <a href="./student/registrations.html">
+              <i class="fa-solid fa-bookmark"></i>
+              My Registrations
+            </a>
+          </li>
+
+          <li>
+            <a href="./student/notifications.html">
+              <i class="fa-solid fa-bell"></i>
+              Notifications
+            </a>
+          </li>
+
+          <li>
+            <a href="./student/profile.html">
+              <i class="fa-solid fa-user"></i>
+              Profile
+            </a>
+          </li>
+
+          <li class="logout">
+            <a href="../loginsignup/Adminlogin.html">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+
+      <main class="dashboard-content">
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+          <div class="welcome-text">
+            <h1>Welcome Back, Srijesh 👋</h1>
+
+            <p>
+              Stay updated with your registered events, upcoming activities, and
+              latest college announcements.
+            </p>
+          </div>
+        </section>
+
+        <!-- Statistics Cards -->
+
+        <section class="dashboard-cards">
+          <div class="card">
+            <div class="card-icon blue">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+
+            <div class="card-info">
+              <h2>18</h2>
+              <p>Total Events</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon green">
+              <i class="fa-solid fa-bookmark"></i>
+            </div>
+
+            <div class="card-info">
+              <h2>6</h2>
+              <p>Registered</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon orange">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+
+            <div class="card-info">
+              <h2>3</h2>
+              <p>Upcoming</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon purple">
+              <i class="fa-solid fa-award"></i>
+            </div>
+
+            <div class="card-info">
+              <h2>2</h2>
+              <p>Certificates</p>
+            </div>
+          </div>
+        </section>
+
+       
+      </main>
+    </div>
+
+    <!-- Dashboard  -->
+
+    <script src="../../JS/dashboard.js"></script>
+  </body>
+</html>

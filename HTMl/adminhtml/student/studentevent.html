@@ -1,0 +1,176 @@
+<!-- Events  -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../css/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="icon" href="../../../img/logo.png" type="image/x-icon" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- Dashboard Navbar -->
+
+    <header id="dashboard-navbar">
+      <div class="container">
+        <div class="dashboard-nav">
+          <!-- Logo -->
+
+          <div class="nav-logo">
+            <a href="../../Homepage.html">
+              <img src="../../../img/logo.png" alt="SEMS Logo" />
+            </a>
+          </div>
+
+          <!-- Title -->
+
+          <div class="dashboard-title">
+            <h2>Student Dashboard</h2>
+          </div>
+
+          <!-- Hamburger -->
+
+          <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <!-- Right Side -->
+
+          <div class="dashboard-profile">
+            <a href="#" class="notification">
+              <i class="fa-solid fa-bell"></i>
+            </a>
+
+            <div class="profile-info">
+              <img src="../../../img/student-avatar.png" alt="Student" />
+
+              <span>Srijesh</span>
+
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sidebar  -->
+    <div class="sidebar-overlay"></div>
+    <div class="dashboard-container">
+      <!-- Sidebar -->
+
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <a href="../studentdashboard.html">
+              <i class="fa-solid fa-house"></i>
+              Dashboard
+            </a>
+          </li>
+
+          <li class="active">
+            <a href="./student/studentevent.html">
+              <i class="fa-solid fa-calendar-days"></i>
+              Events
+            </a>
+          </li>
+
+          <li>
+            <a href="./registrations.html">
+              <i class="fa-solid fa-bookmark"></i>
+              My Registrations
+            </a>
+          </li>
+
+          <li>
+            <a href="./notifications.html">
+              <i class="fa-solid fa-bell"></i>
+              Notifications
+            </a>
+          </li>
+
+          <li>
+            <a href="./profile.html">
+              <i class="fa-solid fa-user"></i>
+              Profile
+            </a>
+          </li>
+
+          <li class="logout">
+            <a href="../../loginsignup/Adminlogin.html">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </aside>  
+
+      <!-- Main Content -->
+
+      <main class="dashboard-content">
+        <!-- Events  -->
+
+        <section class="upcoming-events">
+          <div class="section-header">
+            <h2>Upcoming Events</h2>
+
+            <a href="../Events.html">View All</a>
+          </div>
+
+          <div class="events-list">
+            <!-- Event 1 -->
+
+            <div class="event-card">
+              <img src="../../../img/event1.jpg" alt="AI Workshop" />
+
+              <div class="event-details">
+                <h3>AI Workshop 2026</h3>
+
+                <p>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Computer Lab
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-calendar-days"></i>
+                  15 July 2026
+                </p>
+              </div>
+
+              <a href="../Events.html" class="event-btn"> View Details </a>
+            </div>
+
+            <!-- Event 2 -->
+
+            <div class="event-card">
+              <img src="../../../img/event2.jpg" alt="Hackathon" />
+
+              <div class="event-details">
+                <h3>National Hackathon</h3>
+
+                <p>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Auditorium
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-calendar-days"></i>
+                  20 July 2026
+                </p>
+              </div>
+
+              <a href="../Events.html" class="event-btn"> View Details </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Dashboard  -->
+
+    <script src="../../../JS/dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!-- Events  -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../css/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="icon" href="../../../img/logo.png" type="image/x-icon" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- Dashboard Navbar -->
+
+    <header id="dashboard-navbar">
+      <div class="container">
+        <div class="dashboard-nav">
+          <!-- Logo -->
+
+          <div class="nav-logo">
+            <a href="../../Homepage.html">
+              <img src="../../../img/logo.png" alt="SEMS Logo" />
+            </a>
+          </div>
+
+          <!-- Title -->
+
+          <div class="dashboard-title">
+            <h2>Student Dashboard</h2>
+          </div>
+
+          <!-- Hamburger -->
+
+          <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <!-- Right Side -->
+
+          <div class="dashboard-profile">
+            <a href="#" class="notification">
+              <i class="fa-solid fa-bell"></i>
+            </a>
+
+            <div class="profile-info">
+              <img src="../../../img/student-avatar.png" alt="Student" />
+
+              <span>Srijesh</span>
+
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sidebar  -->
+    <div class="sidebar-overlay"></div>
+    <div class="dashboard-container">
+      <!-- Sidebar -->
+
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <a href="../studentdashboard.html">
+              <i class="fa-solid fa-house"></i>
+              Dashboard
+            </a>
+          </li>
+
+          <li >
+            <a href="./studentevent.html">
+              <i class="fa-solid fa-calendar-days"></i>
+              Events
+            </a>
+          </li>
+
+          <li>
+            <a href="./registrations.html">
+              <i class="fa-solid fa-bookmark"></i>
+              My Registrations
+            </a>
+          </li>
+
+          <li>
+            <a href="./notifications.html">
+              <i class="fa-solid fa-bell"></i>
+              Notifications
+            </a>
+          </li>
+
+          <li class="active">
+            <a href="./profile.html">
+              <i class="fa-solid fa-user"></i>
+              Profile
+            </a>
+          </li>
+
+          <li class="logout">
+            <a href="../../loginsignup/Adminlogin.html">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </aside>  
+
+      <!-- Main Content -->
+
+      <main class="dashboard-content">
+        <!-- Student Profile -->
+
+<section class="student-profile">
+
+    <div class="section-header">
+        <h2>Student Profile</h2>
+    </div>
+
+    <div class="profile-card">
+
+        <div class="profile-left">
+
+            <img src="../../../img/student-avatar.png" alt="Student">
+
+            <h3>Srijesh Bista</h3>
+
+            <p>BCA 4th Semester</p>
+
+            <button class="primary-btn">
+                Edit Profile
+            </button>
+
+        </div>
+
+        <div class="profile-right">
+
+            <div class="profile-info">
+
+                <div class="info-box">
+                    <label>Student ID</label>
+                    <span>BCA24015</span>
+                </div>
+
+                <div class="info-box">
+                    <label>Email</label>
+                    <span>srijesh@gmail.com</span>
+                </div>
+
+                <div class="info-box">
+                    <label>Phone</label>
+                    <span>98XXXXXXXX</span>
+                </div>
+
+                <div class="info-box">
+                    <label>Department</label>
+                    <span>BCA</span>
+                </div>
+
+                <div class="info-box">
+                    <label>Semester</label>
+                    <span>4th Semester</span>
+                </div>
+
+                <div class="info-box">
+                    <label>Registered Events</label>
+                    <span>6 Events</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+      </main>
+    </div>
+
+    <!-- Dashboard  -->
+
+    <script src="../../../JS/dashboard.js"></script>
+  </body>
+</html>

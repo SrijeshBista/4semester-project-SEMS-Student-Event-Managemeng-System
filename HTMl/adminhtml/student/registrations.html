@@ -1,0 +1,182 @@
+<!-- Events  -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../css/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="icon" href="../../../img/logo.png" type="image/x-icon" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- Dashboard Navbar -->
+
+    <header id="dashboard-navbar">
+      <div class="container">
+        <div class="dashboard-nav">
+          <!-- Logo -->
+
+          <div class="nav-logo">
+            <a href="../../Homepage.html">
+              <img src="../../../img/logo.png" alt="SEMS Logo" />
+            </a>
+          </div>
+
+          <!-- Title -->
+
+          <div class="dashboard-title">
+            <h2>Student Dashboard</h2>
+          </div>
+
+          <!-- Hamburger -->
+
+          <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <!-- Right Side -->
+
+          <div class="dashboard-profile">
+            <a href="#" class="notification">
+              <i class="fa-solid fa-bell"></i>
+            </a>
+
+            <div class="profile-info">
+              <img src="../../../img/student-avatar.png" alt="Student" />
+
+              <span>Srijesh</span>
+
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sidebar  -->
+    <div class="sidebar-overlay"></div>
+    <div class="dashboard-container">
+      <!-- Sidebar -->
+
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <a href="../studentdashboard.html">
+              <i class="fa-solid fa-house"></i>
+              Dashboard
+            </a>
+          </li>
+
+          <li>
+            <a href="./studentevent.html">
+              <i class="fa-solid fa-calendar-days"></i>
+              Events
+            </a>
+          </li>
+
+          <li class="active">
+            <a href="./registrations.html">
+              <i class="fa-solid fa-bookmark"></i>
+              My Registrations
+            </a>
+          </li>
+
+          <li>
+            <a href="./notifications.html">
+              <i class="fa-solid fa-bell"></i>
+              Notifications
+            </a>
+          </li>
+
+          <li>
+            <a href="./profile.html">
+              <i class="fa-solid fa-user"></i>
+              Profile
+            </a>
+          </li>
+
+          <li class="logout">
+            <a href="../../loginsignup/Adminlogin.html">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+
+      <main class="dashboard-content">
+        <!-- My Registrations -->
+
+        <section class="registration-page">
+          <div class="section-header">
+            <h2>My Registrations</h2>
+          </div>
+
+          <div class="registration-search">
+            <input type="text" placeholder="Search registered events..." />
+          </div>
+
+          <div class="registration-list">
+            <!-- Card 1 -->
+
+            <div class="registration-card">
+              <img src="../../../img/event1.jpg" alt="" />
+
+              <div class="registration-info">
+                <h3>AI Workshop 2026</h3>
+
+                <p>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Computer Lab
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-calendar-days"></i>
+                  15 July 2026
+                </p>
+
+                <span class="status registered"> Registered </span>
+              </div>
+
+              <button class="primary-btn">View Ticket</button>
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="registration-card">
+              <img src="../../../img/event2.jpg" alt="" />
+
+              <div class="registration-info">
+                <h3>National Hackathon</h3>
+
+                <p>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Auditorium
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-calendar-days"></i>
+                  20 July 2026
+                </p>
+
+                <span class="status registered"> Registered </span>
+              </div>
+
+              <button class="danger-btn">Cancel</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Dashboard  -->
+
+    <script src="../../../JS/dashboard.js"></script>
+  </body>
+</html>

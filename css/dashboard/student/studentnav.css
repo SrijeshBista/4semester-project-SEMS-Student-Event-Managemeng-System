@@ -53,26 +53,31 @@
 }
 
 .profile-info {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  cursor: pointer;
+  display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    white-space:nowrap;
 }
 
 .profile-info img {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  object-fit: cover;
+width:45px;
+    height:45px;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
 }
 
 .profile-info span {
-  font-weight: 600;
-  color: #1e293b;
+  font-weight:600;
+    color:#1E293B;
+    white-space:nowrap;
 }
 
 .profile-info i {
-  color: #64748b;
+  color:#64748B;
+    font-size:14px;
+    flex-shrink:0;
 }
 
 /* responsive   */

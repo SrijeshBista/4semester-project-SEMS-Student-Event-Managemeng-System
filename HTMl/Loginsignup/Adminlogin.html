@@ -11,14 +11,16 @@
     />
     <title>SEMS</title>
   </head>
+
   <body>
-    <!-- arrow For home  -->
+    <!-- Back Home -->
+
     <a href="../Homepage.html" class="back-home">
       <i class="fa-solid fa-arrow-left"></i>
       Back to Home
     </a>
 
-    <!-- Logon Section  -->
+    <!-- Login Section -->
 
     <section id="login">
       <div class="container">
@@ -38,30 +40,55 @@
               Login to continue managing and participating in college events.
             </p>
 
-            <form>
+            <!-- Login Form -->
+
+            <form id="loginForm">
               <div class="input-box">
                 <i class="fa-solid fa-envelope"></i>
 
-                <input type="email" placeholder="College Email" required />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="College Email"
+                  required
+                />
               </div>
 
               <div class="input-box">
                 <i class="fa-solid fa-lock"></i>
 
-                <input type="password" placeholder="Password" required />
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Password"
+                  required
+                />
               </div>
+
+              <!-- Error Message -->
+
+              <p
+                id="loginError"
+                style="
+                  color: #ef4444;
+                  display: none;
+                  margin: 10px 0;
+                  font-size: 14px;
+                "
+              >
+                Invalid Email or Password!
+              </p>
 
               <div class="login-option">
                 <label>
                   <input type="checkbox" />
-
                   Remember Me
                 </label>
 
-                <a href="../loginsignup/forgotpass.html">Forgot Password?</a>
+                <a href="../loginsignup/forgotpass.html"> Forgot Password? </a>
               </div>
 
-              <button>Login</button>
+              <button type="submit">Login</button>
 
               <div class="login-links">
                 <p>
@@ -73,7 +100,9 @@
                 <p>
                   Want to organize events?
 
-                  <a href="../loginsignup/Becomehost.html"> Become an Event Host </a>
+                  <a href="../loginsignup/Becomehost.html">
+                    Become an Event Host
+                  </a>
                 </p>
               </div>
             </form>
@@ -81,5 +110,7 @@
         </div>
       </div>
     </section>
+
+    <script src="../../JS/student.js"></script>
   </body>
 </html>

@@ -8,10 +8,608 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="icon" href="../img/logo.png" type="image/x-icon" />
-    <title>Dashboard</title>
+    <link rel="icon" href="../../img/logo.png" type="image/x-icon" />
+    <title>Admin Dashboard</title>
 </head>
 <body>
-    
+    <!-- ==========================
+         ADMIN NAVBAR
+    =========================== -->
+
+    <header id="admin-navbar">
+      <div class="container">
+
+        <div class="admin-nav">
+
+          <!-- Logo -->
+
+          <div class="admin-logo">
+            <a href="../Homepage.html">
+              <img src="../../img/logo.png" alt="SEMS Logo" />
+            </a>
+          </div>
+
+
+          <!-- Page Title -->
+
+          <div class="admin-title">
+            <h2>Admin Dashboard</h2>
+          </div>
+
+
+          <!-- Hamburger -->
+
+          <div class="admin-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+
+          <!-- Right Side -->
+
+          <div class="admin-profile">
+
+            <a href="#" class="admin-notification">
+              <i class="fa-solid fa-bell"></i>
+            </a>
+
+            <div class="admin-profile-info">
+
+              <div class="admin-avatar">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+
+              <span>Admin</span>
+
+              <i class="fa-solid fa-chevron-down"></i>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </header>
+
+
+    <!-- ==========================
+         SIDEBAR OVERLAY
+    =========================== -->
+
+    <div class="admin-sidebar-overlay"></div>
+
+
+    <!-- ==========================
+         ADMIN LAYOUT
+    =========================== -->
+
+    <div class="admin-container">
+
+
+      <!-- ==========================
+           SIDEBAR
+      =========================== -->
+
+      <aside class="admin-sidebar">
+
+        <ul>
+
+          <!-- Dashboard -->
+
+          <li class="active">
+
+            <a href="admindashboard.html">
+
+              <i class="fa-solid fa-house"></i>
+
+              <span>Dashboard</span>
+
+            </a>
+
+          </li>
+
+
+          <!-- Events -->
+
+          <li>
+
+            <a href="#">
+
+              <i class="fa-solid fa-calendar-days"></i>
+
+              <span>Events</span>
+
+            </a>
+
+          </li>
+
+
+          <!-- Students -->
+
+          <li>
+
+            <a href="#">
+
+              <i class="fa-solid fa-user-graduate"></i>
+
+              <span>Students</span>
+
+            </a>
+
+          </li>
+
+
+          <!-- Hosts -->
+
+          <li>
+
+            <a href="#">
+
+              <i class="fa-solid fa-users"></i>
+
+              <span>Event Hosts</span>
+
+            </a>
+
+          </li>
+
+
+          <!-- Host Requests -->
+
+          <li>
+
+            <a href="#">
+
+              <i class="fa-solid fa-user-check"></i>
+
+              <span>Host Requests</span>
+
+            </a>
+
+          </li>
+
+
+          <!-- Notifications -->
+
+          <li>
+
+            <a href="#">
+
+              <i class="fa-solid fa-bell"></i>
+
+              <span>Notifications</span>
+
+            </a>
+
+          </li>
+
+
+          <!-- Profile -->
+
+          <li>
+
+            <a href="#">
+
+              <i class="fa-solid fa-user"></i>
+
+              <span>Profile</span>
+
+            </a>
+
+          </li>
+
+
+          <!-- Logout -->
+
+          <li class="admin-logout">
+
+            <a href="../loginsignup/Adminlogin.html">
+
+              <i class="fa-solid fa-right-from-bracket"></i>
+
+              <span>Logout</span>
+
+            </a>
+
+          </li>
+
+        </ul>
+
+      </aside>
+
+
+
+      <!-- ==========================
+           MAIN CONTENT
+      =========================== -->
+
+      <main class="admin-content">
+
+
+        <!-- Welcome -->
+
+        <section class="admin-welcome">
+
+          <div>
+
+            <h1>Welcome Back, Admin 👋</h1>
+
+            <p>
+              Manage students, event hosts, events, and system activities
+              from your dashboard.
+            </p>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- ==========================
+             STATISTICS
+        =========================== -->
+
+        <section class="admin-statistics">
+
+
+          <!-- Total Events -->
+
+          <div class="admin-card">
+
+            <div class="admin-card-icon blue">
+
+              <i class="fa-solid fa-calendar-days"></i>
+
+            </div>
+
+            <div class="admin-card-info">
+
+              <h2>24</h2>
+
+              <p>Total Events</p>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- Pending Events -->
+
+          <div class="admin-card">
+
+            <div class="admin-card-icon orange">
+
+              <i class="fa-solid fa-clock"></i>
+
+            </div>
+
+            <div class="admin-card-info">
+
+              <h2>5</h2>
+
+              <p>Pending Events</p>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- Students -->
+
+          <div class="admin-card">
+
+            <div class="admin-card-icon green">
+
+              <i class="fa-solid fa-user-graduate"></i>
+
+            </div>
+
+            <div class="admin-card-info">
+
+              <h2>350</h2>
+
+              <p>Total Students</p>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- Hosts -->
+
+          <div class="admin-card">
+
+            <div class="admin-card-icon purple">
+
+              <i class="fa-solid fa-users"></i>
+
+            </div>
+
+            <div class="admin-card-info">
+
+              <h2>18</h2>
+
+              <p>Event Hosts</p>
+
+            </div>
+
+          </div>
+
+
+        </section>
+
+
+
+        <!-- ==========================
+             RECENT EVENT REQUESTS
+        =========================== -->
+
+        <section class="admin-section">
+
+
+          <div class="admin-section-header">
+
+            <div>
+
+              <h2>Recent Event Requests</h2>
+
+              <p>
+                Review the latest event requests submitted by hosts.
+              </p>
+
+            </div>
+
+            <a href="#" class="admin-view-all">
+              View All
+            </a>
+
+          </div>
+
+
+
+          <!-- Request 1 -->
+
+          <div class="event-request">
+
+            <div class="event-request-icon blue">
+
+              <i class="fa-solid fa-robot"></i>
+
+            </div>
+
+            <div class="event-request-info">
+
+              <h3>AI Workshop 2026</h3>
+
+              <p>
+                <i class="fa-solid fa-user"></i>
+                Srijesh
+              </p>
+
+            </div>
+
+            <div class="event-request-date">
+
+              <p>
+                <i class="fa-solid fa-calendar"></i>
+                20 Aug 2026
+              </p>
+
+            </div>
+
+            <span class="status pending">
+              Pending
+            </span>
+
+            <button class="admin-review-btn">
+              Review
+            </button>
+
+          </div>
+
+
+
+          <!-- Request 2 -->
+
+          <div class="event-request">
+
+            <div class="event-request-icon purple">
+
+              <i class="fa-solid fa-code"></i>
+
+            </div>
+
+            <div class="event-request-info">
+
+              <h3>National Hackathon</h3>
+
+              <p>
+                <i class="fa-solid fa-user"></i>
+                Rahul
+              </p>
+
+            </div>
+
+            <div class="event-request-date">
+
+              <p>
+                <i class="fa-solid fa-calendar"></i>
+                25 Aug 2026
+              </p>
+
+            </div>
+
+            <span class="status approved">
+              Approved
+            </span>
+
+            <button class="admin-review-btn">
+              View
+            </button>
+
+          </div>
+
+
+
+          <!-- Request 3 -->
+
+          <div class="event-request">
+
+            <div class="event-request-icon orange">
+
+              <i class="fa-solid fa-briefcase"></i>
+
+            </div>
+
+            <div class="event-request-info">
+
+              <h3>Career Fair 2026</h3>
+
+              <p>
+                <i class="fa-solid fa-user"></i>
+                Anisha
+              </p>
+
+            </div>
+
+            <div class="event-request-date">
+
+              <p>
+                <i class="fa-solid fa-calendar"></i>
+                02 Sep 2026
+              </p>
+
+            </div>
+
+            <span class="status pending">
+              Pending
+            </span>
+
+            <button class="admin-review-btn">
+              Review
+            </button>
+
+          </div>
+
+
+        </section>
+
+
+
+        <!-- ==========================
+             QUICK ACTIONS
+        =========================== -->
+
+        <section class="admin-section">
+
+
+          <div class="admin-section-header">
+
+            <div>
+
+              <h2>Quick Actions</h2>
+
+              <p>
+                Quickly access frequently used administration features.
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="admin-actions">
+
+
+            <a href="#" class="admin-action">
+
+              <div class="action-icon blue">
+
+                <i class="fa-solid fa-calendar-plus"></i>
+
+              </div>
+
+              <div>
+
+                <h3>Manage Events</h3>
+
+                <p>
+                  View and manage all events
+                </p>
+
+              </div>
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+
+            <a href="#" class="admin-action">
+
+              <div class="action-icon green">
+
+                <i class="fa-solid fa-user-graduate"></i>
+
+              </div>
+
+              <div>
+
+                <h3>Manage Students</h3>
+
+                <p>
+                  View registered students
+                </p>
+
+              </div>
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+
+            <a href="#" class="admin-action">
+
+              <div class="action-icon purple">
+
+                <i class="fa-solid fa-user-check"></i>
+
+              </div>
+
+              <div>
+
+                <h3>Host Requests</h3>
+
+                <p>
+                  Review host applications
+                </p>
+
+              </div>
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+          </div>
+
+        </section>
+
+
+      </main>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="../../JS/admin.js"></script>
+
+  </body>
 </body>
 </html>

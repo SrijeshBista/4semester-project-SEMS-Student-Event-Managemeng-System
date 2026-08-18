@@ -34,7 +34,7 @@ loginForm.addEventListener("submit", function (e) {
 
         // Admin
         else if (email === "admin@gmail.com" && password === "admin1234") {
-            window.location.href = "";
+            window.location.href = "../adminhtml/admindashboard.html";
         }
 
         // Wrong Login

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../../css/Style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="icon" href="../../../img/logo.png" type="image/x-icon" />
+
+    <title>Admin - Manage Events | SEMS</title>
+  </head>
+
+  <body>
+         <!-- ADMIN NAVBAR -->
+
+    <header id="admin-navbar">
+      <div class="container">
+        <div class="admin-nav">
+          <!-- Logo -->
+
+          <div class="admin-logo">
+            <a href="../Homepage.html">
+              <img src="../../../img/logo.png" alt="SEMS Logo" />
+            </a>
+          </div>
+
+          <!-- Page Title -->
+
+          <div class="admin-title">
+            <h2>Admin Dashboard</h2>
+          </div>
+
+          <!-- Mobile Menu -->
+
+          <div class="admin-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <!-- Admin Profile -->
+
+          <div class="admin-profile">
+            <a href="./managenotification.html" class="admin-notification">
+              <i class="fa-solid fa-bell"></i>
+            </a>
+
+            <div class="admin-profile-info">
+              <div class="admin-avatar">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+
+              <span>Admin</span>
+
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+         <!-- SIDEBAR OVERLAY -->
+   
+    <div class="admin-sidebar-overlay"></div>
+
+  
+         <!-- ADMIN LAYOUT -->
+    
+
+    <div class="admin-container">
+       <!-- SIDEBAR -->
+    
+
+      <aside class="admin-sidebar">
+        <ul>
+          <li>
+            <a href="../../adminhtml/admindashboard.html">
+              <i class="fa-solid fa-house"></i>
+
+              <span>Dashboard</span>
+            </a>
+          </li>
+
+          <li class="active">
+            <a href="./manageevents.html">
+              <i class="fa-solid fa-calendar-days"></i>
+
+              <span>Events</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./managestudent.html">
+              <i class="fa-solid fa-user-graduate"></i>
+
+              <span>Students</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./manageeventhosts.html">
+              <i class="fa-solid fa-users"></i>
+
+              <span>Event Hosts</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./managehostrequest.html">
+              <i class="fa-solid fa-user-check"></i>
+
+              <span>Host Requests</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="managenotification.html">
+              <i class="fa-solid fa-bell"></i>
+
+              <span>Notifications</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="manageprofile.html">
+              <i class="fa-solid fa-user"></i>
+
+              <span>Profile</span>
+            </a>
+          </li>
+
+          <li class="admin-logout">
+            <a href="../loginsignup/Adminlogin.html">
+              <i class="fa-solid fa-right-from-bracket"></i>
+
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      
+
+    <script src="../../../JS/admin.js"></script>
+  </body>
+</html>

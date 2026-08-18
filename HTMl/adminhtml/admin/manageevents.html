@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../../css/Style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="icon" href="../../../img/logo.png" type="image/x-icon" />
+
+    <title>Admin - Manage Events | SEMS</title>
+  </head>
+
+  <body>
+    <!-- =========================================
+         ADMIN NAVBAR
+    ========================================== -->
+
+    <header id="admin-navbar">
+      <div class="container">
+        <div class="admin-nav">
+          <!-- Logo -->
+
+          <div class="admin-logo">
+            <a href="../Homepage.html">
+              <img src="../../../img/logo.png" alt="SEMS Logo" />
+            </a>
+          </div>
+
+          <!-- Page Title -->
+
+          <div class="admin-title">
+            <h2>Admin Dashboard</h2>
+          </div>
+
+          <!-- Mobile Menu -->
+
+          <div class="admin-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <!-- Admin Profile -->
+
+          <div class="admin-profile">
+            <a href="./managenotification.html" class="admin-notification">
+              <i class="fa-solid fa-bell"></i>
+            </a>
+
+            <div class="admin-profile-info">
+              <div class="admin-avatar">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+
+              <span>Admin</span>
+
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================
+         SIDEBAR OVERLAY
+    ========================================== -->
+
+    <div class="admin-sidebar-overlay"></div>
+
+    <!-- =========================================
+         ADMIN LAYOUT
+    ========================================== -->
+
+    <div class="admin-container">
+      <!-- =========================================
+           SIDEBAR
+      ========================================== -->
+
+      <aside class="admin-sidebar">
+        <ul>
+          <li>
+            <a href="../../adminhtml/admindashboard.html">
+              <i class="fa-solid fa-house"></i>
+
+              <span>Dashboard</span>
+            </a>
+          </li>
+
+          <li class="active">
+            <a href="./manageevents.html">
+              <i class="fa-solid fa-calendar-days"></i>
+
+              <span>Events</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./managestudent.html">
+              <i class="fa-solid fa-user-graduate"></i>
+
+              <span>Students</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./manageeventhosts.html">
+              <i class="fa-solid fa-users"></i>
+
+              <span>Event Hosts</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./managehostrequest.html">
+              <i class="fa-solid fa-user-check"></i>
+
+              <span>Host Requests</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="managenotification.html">
+              <i class="fa-solid fa-bell"></i>
+
+              <span>Notifications</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="manageprofile.html">
+              <i class="fa-solid fa-user"></i>
+
+              <span>Profile</span>
+            </a>
+          </li>
+
+          <li class="admin-logout">
+            <a href="../loginsignup/Adminlogin.html">
+              <i class="fa-solid fa-right-from-bracket"></i>
+
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- =========================================
+           MAIN CONTENT
+      ========================================== -->
+
+      <main class="admin-content admin-events-page">
+        <!-- Page Heading -->
+
+        <section class="admin-events-heading">
+          <div>
+            <h1>Events</h1>
+
+            <p>View, review, and manage all events submitted to SEMS.</p>
+          </div>
+
+          <button type="button" class="admin-events-add-btn">
+            <i class="fa-solid fa-plus"></i>
+
+            Add Event
+          </button>
+        </section>
+
+        <!-- =========================================
+             SEARCH + FILTER
+        ========================================== -->
+
+        <section class="admin-events-tools">
+          <!-- Search -->
+
+          <div class="admin-events-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input type="text" placeholder="Search events..." />
+          </div>
+
+          <!-- Filter -->
+
+          <div class="admin-events-filter">
+            <label for="adminEventStatus"> Status </label>
+
+            <select id="adminEventStatus">
+              <option value="all">All Events</option>
+
+              <option value="pending">Pending</option>
+
+              <option value="approved">Approved</option>
+
+              <option value="rejected">Rejected</option>
+            </select>
+          </div>
+        </section>
+
+        <!-- =========================================
+             EVENT SUMMARY
+        ========================================== -->
+
+        <section class="admin-events-summary">
+          <div class="admin-events-summary-card">
+            <div class="admin-events-summary-icon blue">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+
+            <div>
+              <h3>24</h3>
+
+              <p>Total Events</p>
+            </div>
+          </div>
+
+          <div class="admin-events-summary-card">
+            <div class="admin-events-summary-icon orange">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+
+            <div>
+              <h3>5</h3>
+
+              <p>Pending</p>
+            </div>
+          </div>
+
+          <div class="admin-events-summary-card">
+            <div class="admin-events-summary-icon green">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <div>
+              <h3>17</h3>
+
+              <p>Approved</p>
+            </div>
+          </div>
+
+          <div class="admin-events-summary-card">
+            <div class="admin-events-summary-icon red">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+
+            <div>
+              <h3>2</h3>
+
+              <p>Rejected</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- =========================================
+             EVENTS LIST
+        ========================================== -->
+
+        <section class="admin-events-list-section">
+          <div class="admin-events-list-header">
+            <div>
+              <h2>All Events</h2>
+
+              <p>Recent events submitted by event hosts.</p>
+            </div>
+
+            <span> 5 displayed </span>
+          </div>
+
+          <div class="admin-events-list">
+            <!-- ================= EVENT 1 ================= -->
+
+            <article class="admin-events-item">
+              <div class="admin-events-item-image blue">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+
+              <div class="admin-events-item-main">
+                <div class="admin-events-item-title">
+                  <h3>AI Workshop 2026</h3>
+
+                  <span class="admin-events-category"> Workshop </span>
+                </div>
+
+                <div class="admin-events-item-meta">
+                  <span>
+                    <i class="fa-solid fa-user"></i>
+                    Srijesh Bista
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    20 Aug 2026
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Seminar Hall
+                  </span>
+                </div>
+              </div>
+
+              <div class="admin-events-item-status">
+                <span class="admin-events-status pending"> Pending </span>
+              </div>
+
+              <div class="admin-events-item-actions">
+                <button
+                  type="button"
+                  class="admin-events-action view"
+                  title="View Event"
+                >
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+
+                <button
+                  type="button"
+                  class="admin-events-action approve"
+                  title="Approve Event"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </button>
+
+                <button
+                  type="button"
+                  class="admin-events-action reject"
+                  title="Reject Event"
+                >
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- ================= EVENT 2 ================= -->
+
+            <article class="admin-events-item">
+              <div class="admin-events-item-image purple">
+                <i class="fa-solid fa-code"></i>
+              </div>
+
+              <div class="admin-events-item-main">
+                <div class="admin-events-item-title">
+                  <h3>National Hackathon</h3>
+
+                  <span class="admin-events-category"> Competition </span>
+                </div>
+
+                <div class="admin-events-item-meta">
+                  <span>
+                    <i class="fa-solid fa-user"></i>
+                    Rahul Sharma
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    25 Aug 2026
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    College Hall
+                  </span>
+                </div>
+              </div>
+
+              <div class="admin-events-item-status">
+                <span class="admin-events-status approved"> Approved </span>
+              </div>
+
+              <div class="admin-events-item-actions">
+                <button
+                  type="button"
+                  class="admin-events-action view"
+                  title="View Event"
+                >
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+
+                <button
+                  type="button"
+                  class="admin-events-action edit"
+                  title="Edit Event"
+                >
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+
+                <button
+                  type="button"
+                  class="admin-events-action delete"
+                  title="Delete Event"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- ================= EVENT 3 ================= -->
+
+            <article class="admin-events-item">
+              <div class="admin-events-item-image orange">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+
+              <div class="admin-events-item-main">
+                <div class="admin-events-item-title">
+                  <h3>Career Fair 2026</h3>
+
+                  <span class="admin-events-category"> Career </span>
+                </div>
+
+                <div class="admin-events-item-meta">
+                  <span>
+                    <i class="fa-solid fa-user"></i>
+                    Anisha Thapa
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    02 Sep 2026
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Main Auditorium
+                  </span>
+                </div>
+              </div>
+
+              <div class="admin-events-item-status">
+                <span class="admin-events-status pending"> Pending </span>
+              </div>
+
+              <div class="admin-events-item-actions">
+                <button
+                  type="button"
+                  class="admin-events-action view"
+                  title="View Event"
+                >
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+
+                <button
+                  type="button"
+                  class="admin-events-action approve"
+                  title="Approve Event"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </button>
+
+                <button
+                  type="button"
+                  class="admin-events-action reject"
+                  title="Reject Event"
+                >
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- ================= EVENT 4 ================= -->
+
+            <article class="admin-events-item">
+              <div class="admin-events-item-image green">
+                <i class="fa-solid fa-futbol"></i>
+              </div>
+
+              <div class="admin-events-item-main">
+                <div class="admin-events-item-title">
+                  <h3>Annual Sports Meet</h3>
+
+                  <span class="admin-events-category"> Sports </span>
+                </div>
+
+                <div class="admin-events-item-meta">
+                  <span>
+                    <i class="fa-solid fa-user"></i>
+                    Suman KC
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    10 Sep 2026
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    College Ground
+                  </span>
+                </div>
+              </div>
+
+              <div class="admin-events-item-status">
+                <span class="admin-events-status approved"> Approved </span>
+              </div>
+
+              <div class="admin-events-item-actions">
+                <button
+                  type="button"
+                  class="admin-events-action view"
+                  title="View Event"
+                >
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+
+                <button
+                  type="button"
+                  class="admin-events-action edit"
+                  title="Edit Event"
+                >
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+
+                <button
+                  type="button"
+                  class="admin-events-action delete"
+                  title="Delete Event"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- ================= EVENT 5 ================= -->
+
+            <article class="admin-events-item">
+              <div class="admin-events-item-image red">
+                <i class="fa-solid fa-microphone"></i>
+              </div>
+
+              <div class="admin-events-item-main">
+                <div class="admin-events-item-title">
+                  <h3>Public Speaking Program</h3>
+
+                  <span class="admin-events-category"> Seminar </span>
+                </div>
+
+                <div class="admin-events-item-meta">
+                  <span>
+                    <i class="fa-solid fa-user"></i>
+                    Priya Gurung
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    15 Sep 2026
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Room 204
+                  </span>
+                </div>
+              </div>
+
+              <div class="admin-events-item-status">
+                <span class="admin-events-status rejected"> Rejected </span>
+              </div>
+
+              <div class="admin-events-item-actions">
+                <button
+                  type="button"
+                  class="admin-events-action view"
+                  title="View Event"
+                >
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- =========================================
+         ADMIN DASHBOARD JAVASCRIPT
+    ========================================== -->
+
+    <script src="../../../JS/admin.js"></script>
+  </body>
+</html>
+```

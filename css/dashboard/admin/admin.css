@@ -821,5 +821,530 @@
   padding: 25px;
 }
 
+/* Responsive for the admin dashboard  */
+/* =====================================================
+   TABLET
+===================================================== */
 
-/* import the other page of admin dashboard css */
+@media (max-width: 1100px) {
+  /* Statistics */
+
+  .admin-statistics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Quick Actions */
+
+  .admin-actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =====================================================
+   TABLET / SMALL LAPTOP
+===================================================== */
+
+@media (max-width: 900px) {
+  /* Admin content */
+
+  .admin-content {
+    padding: 25px;
+  }
+
+  /* Statistics */
+
+  .admin-statistics {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  /* Request row */
+
+  .event-request {
+    grid-template-columns: 50px 1fr auto;
+    gap: 12px;
+  }
+
+  .event-request-date {
+    display: none;
+  }
+
+  .status {
+    display: none;
+  }
+
+  /* Quick actions */
+
+  .admin-actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+  /* ==========================
+     NAVBAR
+  ========================== */
+
+  #admin-navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+
+  .admin-nav {
+    min-height: 70px;
+    padding: 10px 0;
+  }
+
+  .admin-logo {
+    width: 90px;
+  }
+
+  .admin-title {
+    display: none;
+  }
+
+  .admin-menu-toggle {
+    display: block;
+    order: 2;
+    font-size: 23px;
+  }
+
+  .admin-profile {
+    gap: 14px;
+  }
+
+  .admin-profile-info span,
+  .admin-profile-info > i {
+    display: none;
+  }
+
+  .admin-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+  }
+
+  .admin-notification {
+    font-size: 19px;
+  }
+
+  /* ==========================
+     MAIN LAYOUT
+  ========================== */
+
+  .admin-container {
+    display: block;
+    min-height: calc(100vh - 70px);
+  }
+
+  /* ==========================
+     SIDEBAR
+  ========================== */
+
+  .admin-sidebar {
+    position: fixed;
+
+    top: 70px;
+    left: -280px;
+
+    width: 260px;
+    height: calc(100vh - 70px);
+
+    padding: 25px 20px;
+
+    z-index: 1001;
+
+    transition: left 0.3s ease;
+
+    overflow-y: auto;
+  }
+
+  .admin-sidebar.open {
+    left: 0;
+  }
+
+  /* ==========================
+     OVERLAY
+  ========================== */
+
+  .admin-sidebar-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(15, 23, 42, 0.45);
+
+    z-index: 1000;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.3s;
+  }
+
+  .admin-sidebar-overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* ==========================
+     CONTENT
+  ========================== */
+
+  .admin-content {
+    width: 100%;
+    min-width: 0;
+
+    padding: 20px;
+  }
+
+  /* ==========================
+     WELCOME
+  ========================== */
+
+  .admin-welcome {
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+
+  .admin-welcome h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .admin-welcome p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* ==========================
+     STATISTICS
+  ========================== */
+
+  .admin-statistics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+  }
+
+  .admin-card {
+    padding: 18px;
+    gap: 12px;
+
+    min-width: 0;
+  }
+
+  .admin-card-icon {
+    width: 50px;
+    height: 50px;
+
+    font-size: 19px;
+  }
+
+  .admin-card-info {
+    min-width: 0;
+  }
+
+  .admin-card-info h2 {
+    font-size: 24px;
+  }
+
+  .admin-card-info p {
+    font-size: 13px;
+  }
+
+  /* ==========================
+     SECTIONS
+  ========================== */
+
+  .admin-section {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .admin-section-header {
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+  }
+
+  .admin-section-header h2 {
+    font-size: 19px;
+  }
+
+  .admin-section-header p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* ==========================
+     EVENT REQUESTS
+  ========================== */
+
+  .event-request {
+    grid-template-columns: 48px 1fr auto;
+
+    gap: 12px;
+
+    padding: 14px 0;
+  }
+
+  .event-request-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .event-request-info {
+    min-width: 0;
+  }
+
+  .event-request-info h3 {
+    font-size: 14px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .event-request-info p {
+    font-size: 12px;
+  }
+
+  .event-request-date {
+    display: none;
+  }
+
+  .status {
+    display: none;
+  }
+
+  .admin-review-btn {
+    padding: 7px 11px;
+    font-size: 11px;
+  }
+
+  /* ==========================
+     QUICK ACTIONS
+  ========================== */
+
+  .admin-actions {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .admin-action {
+    padding: 16px;
+  }
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 576px) {
+  /* ==========================
+     NAVBAR
+  ========================== */
+
+  .admin-nav {
+    min-height: 65px;
+  }
+
+  .admin-logo {
+    width: 80px;
+  }
+
+  .admin-menu-toggle {
+    font-size: 22px;
+  }
+
+  .admin-notification {
+    font-size: 18px;
+  }
+
+  .admin-avatar {
+    width: 36px;
+    height: 36px;
+
+    font-size: 16px;
+  }
+
+  /* ==========================
+     CONTENT
+  ========================== */
+
+  .admin-content {
+    padding: 15px;
+  }
+
+  /* ==========================
+     WELCOME
+  ========================== */
+
+  .admin-welcome {
+    padding: 20px;
+
+    border-radius: 15px;
+  }
+
+  .admin-welcome h1 {
+    font-size: 23px;
+  }
+
+  /* ==========================
+     STATISTICS
+  ========================== */
+
+  .admin-statistics {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .admin-card {
+    padding: 18px;
+  }
+
+  /* ==========================
+     SECTION
+  ========================== */
+
+  .admin-section {
+    padding: 16px;
+
+    border-radius: 15px;
+  }
+
+  .admin-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-view-all {
+    font-size: 13px;
+  }
+
+  /* ==========================
+     REQUESTS
+  ========================== */
+
+  .event-request {
+    grid-template-columns: 44px 1fr;
+
+    gap: 10px;
+  }
+
+  .event-request-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .event-request-info h3 {
+    font-size: 13px;
+  }
+
+  .event-request-info p {
+    font-size: 11px;
+  }
+
+  .admin-review-btn {
+    grid-column: 2;
+
+    justify-self: start;
+
+    margin-top: 4px;
+  }
+
+  /* ==========================
+     QUICK ACTIONS
+  ========================== */
+
+  .admin-action {
+    padding: 15px;
+  }
+
+  .action-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .admin-action h3 {
+    font-size: 13px;
+  }
+
+  .admin-action p {
+    font-size: 11px;
+  }
+}
+
+/* =====================================================
+   REMOVE EXCESSIVE HEIGHT / GAP
+===================================================== */
+
+.admin-content {
+  height: auto;
+  min-height: 0;
+}
+
+.admin-content section {
+  height: auto;
+  min-height: 0;
+}
+
+.admin-welcome {
+  height: auto;
+  min-height: 0;
+}
+
+.admin-statistics {
+  height: auto;
+  min-height: 0;
+
+  align-items: start;
+}
+
+.admin-card {
+  height: auto;
+  min-height: 0;
+}
+
+.admin-section {
+  height: auto;
+  min-height: 0;
+}
+
+.event-request {
+  height: auto;
+  min-height: 0;
+}
+
+.admin-actions {
+  height: auto;
+  min-height: 0;
+}
+
+.admin-action {
+  height: auto;
+  min-height: 0;
+}
+
+/* Prevent accidental oversized child elements */
+
+.admin-content img {
+  max-width: 100%;
+}
+
+.admin-content > * {
+  max-width: 100%;
+}

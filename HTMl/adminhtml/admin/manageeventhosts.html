@@ -5,47 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../../../css/Style.css" />
+    <link rel="icon" href="../../../img/logo.png" type="image/x-icon" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
-    <link rel="icon" href="../../../img/logo.png" type="image/x-icon" />
-
-    <title>Admin - Manage Events | SEMS</title>
+    <title>Manage Event Hosts | SEMS</title>
   </head>
 
   <body>
-         <!-- ADMIN NAVBAR -->
+    <!-- =========================
+       ADMIN NAVBAR
+  ========================== -->
 
     <header id="admin-navbar">
       <div class="container">
         <div class="admin-nav">
-          <!-- Logo -->
-
           <div class="admin-logo">
-            <a href="../Homepage.html">
+            <a href="admindashboard.html">
               <img src="../../../img/logo.png" alt="SEMS Logo" />
             </a>
           </div>
-
-          <!-- Page Title -->
 
           <div class="admin-title">
             <h2>Admin Dashboard</h2>
           </div>
 
-          <!-- Mobile Menu -->
-
           <div class="admin-menu-toggle">
             <i class="fa-solid fa-bars"></i>
           </div>
 
-          <!-- Admin Profile -->
-
           <div class="admin-profile">
-            <a href="./managenotification.html" class="admin-notification">
+            <a href="adminnotifications.html" class="admin-notification">
               <i class="fa-solid fa-bell"></i>
             </a>
 
@@ -63,17 +56,16 @@
       </div>
     </header>
 
-         <!-- SIDEBAR OVERLAY -->
-   
     <div class="admin-sidebar-overlay"></div>
 
-  
-         <!-- ADMIN LAYOUT -->
-    
+    <!-- =========================
+       ADMIN CONTAINER
+  ========================== -->
 
     <div class="admin-container">
-       <!-- SIDEBAR -->
-    
+      <!-- =========================
+         SIDEBAR
+    ========================== -->
 
       <aside class="admin-sidebar">
         <ul>
@@ -85,7 +77,7 @@
             </a>
           </li>
 
-          <li class="active">
+          <li>
             <a href="./manageevents.html">
               <i class="fa-solid fa-calendar-days"></i>
 
@@ -101,7 +93,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="active">
             <a href="./manageeventhosts.html">
               <i class="fa-solid fa-users"></i>
 
@@ -142,8 +134,354 @@
           </li>
         </ul>
       </aside>
-      
 
-    <script src="../../../JS/admin.js"></script>
+      <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+      <main class="admin-content admin-hosts-page">
+        <!-- PAGE HEADER -->
+
+        <section class="admin-hosts-heading">
+          <div>
+            <h1>Event Hosts</h1>
+
+            <p>Manage students who are approved to organize college events.</p>
+          </div>
+
+          <button type="button" class="admin-hosts-add-btn">
+            <i class="fa-solid fa-user-plus"></i>
+            Add Event Host
+          </button>
+        </section>
+
+        <!-- SEARCH + FILTER -->
+
+        <section class="admin-hosts-tools">
+          <div class="admin-hosts-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+              type="text"
+              placeholder="Search host name, host ID or email..."
+            />
+          </div>
+
+          <div class="admin-hosts-filter">
+            <label for="hostStatus"> Status </label>
+
+            <select id="hostStatus">
+              <option value="all">All Hosts</option>
+
+              <option value="active">Active</option>
+
+              <option value="inactive">Inactive</option>
+            </select>
+          </div>
+        </section>
+
+        <!-- SUMMARY -->
+
+        <section class="admin-hosts-summary">
+          <div class="admin-host-summary-card">
+            <div class="admin-host-summary-icon blue">
+              <i class="fa-solid fa-users"></i>
+            </div>
+
+            <div>
+              <h3>28</h3>
+              <p>Total Hosts</p>
+            </div>
+          </div>
+
+          <div class="admin-host-summary-card">
+            <div class="admin-host-summary-icon green">
+              <i class="fa-solid fa-user-check"></i>
+            </div>
+
+            <div>
+              <h3>24</h3>
+              <p>Active Hosts</p>
+            </div>
+          </div>
+
+          <div class="admin-host-summary-card">
+            <div class="admin-host-summary-icon orange">
+              <i class="fa-solid fa-user-clock"></i>
+            </div>
+
+            <div>
+              <h3>4</h3>
+              <p>Inactive Hosts</p>
+            </div>
+          </div>
+
+          <div class="admin-host-summary-card">
+            <div class="admin-host-summary-icon purple">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+
+            <div>
+              <h3>46</h3>
+              <p>Events Organized</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- HOST LIST -->
+
+        <section class="admin-hosts-list-section">
+          <div class="admin-hosts-list-header">
+            <div>
+              <h2>Registered Event Hosts</h2>
+
+              <p>Students currently approved to organize events.</p>
+            </div>
+
+            <span>5 hosts</span>
+          </div>
+
+          <div class="admin-hosts-list">
+            <!-- HOST 1 -->
+
+            <article class="admin-host-item">
+              <div class="admin-host-avatar">SB</div>
+
+              <div class="admin-host-main">
+                <div class="admin-host-name">
+                  <h3>Srijesh Bista</h3>
+
+                  <span>BCA24001</span>
+                </div>
+
+                <div class="admin-host-meta">
+                  <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    srijesh@student.edu.np
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    8 Events
+                  </span>
+                </div>
+              </div>
+
+              <div class="admin-host-status">
+                <span class="admin-host-status-badge active"> Active </span>
+              </div>
+
+              <div class="admin-host-actions">
+                <button class="admin-host-action view" title="View Host">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+
+                <button class="admin-host-action edit" title="Edit Host">
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+
+                <button
+                  class="admin-host-action deactivate"
+                  title="Deactivate Host"
+                >
+                  <i class="fa-solid fa-user-slash"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- HOST 2 -->
+
+            <article class="admin-host-item">
+              <div class="admin-host-avatar">RS</div>
+
+              <div class="admin-host-main">
+                <div class="admin-host-name">
+                  <h3>Rahul Sharma</h3>
+
+                  <span>BCA24002</span>
+                </div>
+
+                <div class="admin-host-meta">
+                  <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    rahul@student.edu.np
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    5 Events
+                  </span>
+                </div>
+              </div>
+
+              <div class="admin-host-status">
+                <span class="admin-host-status-badge active"> Active </span>
+              </div>
+
+              <div class="admin-host-actions">
+                <button class="admin-host-action view" title="View Host">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+
+                <button class="admin-host-action edit" title="Edit Host">
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+
+                <button
+                  class="admin-host-action deactivate"
+                  title="Deactivate Host"
+                >
+                  <i class="fa-solid fa-user-slash"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- HOST 3 -->
+
+            <article class="admin-host-item">
+              <div class="admin-host-avatar">AT</div>
+
+              <div class="admin-host-main">
+                <div class="admin-host-name">
+                  <h3>Anisha Thapa</h3>
+
+                  <span>BCA24003</span>
+                </div>
+
+                <div class="admin-host-meta">
+                  <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    anisha@student.edu.np
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    12 Events
+                  </span>
+                </div>
+              </div>
+
+              <div class="admin-host-status">
+                <span class="admin-host-status-badge active"> Active </span>
+              </div>
+
+              <div class="admin-host-actions">
+                <button class="admin-host-action view" title="View Host">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+
+                <button class="admin-host-action edit" title="Edit Host">
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+
+                <button
+                  class="admin-host-action deactivate"
+                  title="Deactivate Host"
+                >
+                  <i class="fa-solid fa-user-slash"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- HOST 4 -->
+
+            <article class="admin-host-item">
+              <div class="admin-host-avatar">SK</div>
+
+              <div class="admin-host-main">
+                <div class="admin-host-name">
+                  <h3>Suman KC</h3>
+
+                  <span>BCA24004</span>
+                </div>
+
+                <div class="admin-host-meta">
+                  <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    suman@student.edu.np
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    4 Events
+                  </span>
+                </div>
+              </div>
+
+              <div class="admin-host-status">
+                <span class="admin-host-status-badge active"> Active </span>
+              </div>
+
+              <div class="admin-host-actions">
+                <button class="admin-host-action view" title="View Host">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+
+                <button class="admin-host-action edit" title="Edit Host">
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+
+                <button
+                  class="admin-host-action deactivate"
+                  title="Deactivate Host"
+                >
+                  <i class="fa-solid fa-user-slash"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- HOST 5 -->
+
+            <article class="admin-host-item">
+              <div class="admin-host-avatar">PG</div>
+
+              <div class="admin-host-main">
+                <div class="admin-host-name">
+                  <h3>Priya Gurung</h3>
+
+                  <span>BCA24005</span>
+                </div>
+
+                <div class="admin-host-meta">
+                  <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    priya@student.edu.np
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2 Events
+                  </span>
+                </div>
+              </div>
+
+              <div class="admin-host-status">
+                <span class="admin-host-status-badge inactive"> Inactive </span>
+              </div>
+
+              <div class="admin-host-actions">
+                <button class="admin-host-action view" title="View Host">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+
+                <button class="admin-host-action edit" title="Edit Host">
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+
+                <button
+                  class="admin-host-action activate"
+                  title="Activate Host"
+                >
+                  <i class="fa-solid fa-user-check"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../../../JS/admindashboard.js"></script>
   </body>
 </html>
+```

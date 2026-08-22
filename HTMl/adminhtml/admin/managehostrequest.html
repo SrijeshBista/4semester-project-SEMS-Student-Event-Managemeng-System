@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,47 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../../../css/Style.css" />
+    <link rel="icon" href="../../../img/logo.png" type="image/x-icon" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
-    <link rel="icon" href="../../../img/logo.png" type="image/x-icon" />
-
-    <title>Admin - Manage Events | SEMS</title>
+    <title>Host Requests | SEMS</title>
   </head>
 
   <body>
-         <!-- ADMIN NAVBAR -->
+    <!-- =========================
+       ADMIN NAVBAR
+  ========================== -->
 
     <header id="admin-navbar">
       <div class="container">
         <div class="admin-nav">
-          <!-- Logo -->
-
           <div class="admin-logo">
-            <a href="../Homepage.html">
+            <a href="admindashboard.html">
               <img src="../../../img/logo.png" alt="SEMS Logo" />
             </a>
           </div>
 
-          <!-- Page Title -->
-
           <div class="admin-title">
-            <h2>Admin Dashboard</h2>
+            <h2>Host Requests</h2>
           </div>
-
-          <!-- Mobile Menu -->
 
           <div class="admin-menu-toggle">
             <i class="fa-solid fa-bars"></i>
           </div>
 
-          <!-- Admin Profile -->
-
           <div class="admin-profile">
-            <a href="./managenotification.html" class="admin-notification">
+            <a href="adminnotifications.html" class="admin-notification">
               <i class="fa-solid fa-bell"></i>
             </a>
 
@@ -63,17 +57,16 @@
       </div>
     </header>
 
-         <!-- SIDEBAR OVERLAY -->
-   
     <div class="admin-sidebar-overlay"></div>
 
-  
-         <!-- ADMIN LAYOUT -->
-    
+    <!-- =========================
+       ADMIN CONTAINER
+  ========================== -->
 
     <div class="admin-container">
-       <!-- SIDEBAR -->
-    
+      <!-- =========================
+         SIDEBAR
+    ========================== -->
 
       <aside class="admin-sidebar">
         <ul>
@@ -85,7 +78,7 @@
             </a>
           </li>
 
-          <li class="active">
+          <li>
             <a href="./manageevents.html">
               <i class="fa-solid fa-calendar-days"></i>
 
@@ -93,7 +86,7 @@
             </a>
           </li>
 
-          <li>
+          <li >
             <a href="./managestudent.html">
               <i class="fa-solid fa-user-graduate"></i>
 
@@ -109,7 +102,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="active">
             <a href="./managehostrequest.html">
               <i class="fa-solid fa-user-check"></i>
 
@@ -143,9 +136,319 @@
         </ul>
       </aside>
 
-      
+      <!-- =========================
+         MAIN CONTENT
+    ========================== -->
 
-    <script src="../../../JS/admin.js"></script>
+      <main class="admin-content admin-host-request-page">
+        <!-- PAGE HEADER -->
+
+        <section class="host-request-heading">
+          <div>
+            <h1>Event Host Requests</h1>
+
+            <p>Review and manage student requests to become event hosts.</p>
+          </div>
+        </section>
+
+        <!-- REQUEST STATISTICS -->
+
+        <section class="host-request-stats">
+          <div class="host-request-stat-card">
+            <div class="host-request-stat-icon orange">
+              <i class="fa-solid fa-user-clock"></i>
+            </div>
+
+            <div>
+              <h3>8</h3>
+              <p>Pending Requests</p>
+            </div>
+          </div>
+
+          <div class="host-request-stat-card">
+            <div class="host-request-stat-icon green">
+              <i class="fa-solid fa-user-check"></i>
+            </div>
+
+            <div>
+              <h3>24</h3>
+              <p>Approved Hosts</p>
+            </div>
+          </div>
+
+          <div class="host-request-stat-card">
+            <div class="host-request-stat-icon red">
+              <i class="fa-solid fa-user-xmark"></i>
+            </div>
+
+            <div>
+              <h3>3</h3>
+              <p>Rejected Requests</p>
+            </div>
+          </div>
+
+          <div class="host-request-stat-card">
+            <div class="host-request-stat-icon blue">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+
+            <div>
+              <h3>46</h3>
+              <p>Events Organized</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEARCH / FILTER -->
+
+        <section class="host-request-tools">
+          <div class="host-request-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+              type="text"
+              placeholder="Search student name, ID or email..."
+            />
+          </div>
+
+          <div class="host-request-filter">
+            <label for="requestStatus"> Status </label>
+
+            <select id="requestStatus">
+              <option value="pending">Pending</option>
+
+              <option value="approved">Approved</option>
+
+              <option value="rejected">Rejected</option>
+
+              <option value="all">All Requests</option>
+            </select>
+          </div>
+        </section>
+
+        <!-- REQUEST LIST -->
+
+        <section class="host-request-list-section">
+          <div class="host-request-list-header">
+            <div>
+              <h2>Pending Host Requests</h2>
+
+              <p>Review applications before approving event host access.</p>
+            </div>
+
+            <span>8 Requests</span>
+          </div>
+
+          <div class="host-request-list">
+            <!-- REQUEST 1 -->
+
+            <article class="host-request-item">
+              <div class="host-request-avatar">AK</div>
+
+              <div class="host-request-main">
+                <div class="host-request-name">
+                  <h3>Aayush Karki</h3>
+
+                  <span>BCA24006</span>
+                </div>
+
+                <div class="host-request-info">
+                  <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    aayush@student.edu.np
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar"></i>
+                    Requested: 21 Aug 2026
+                  </span>
+                </div>
+
+                <p class="host-request-reason">
+                  Wants to organize a college-level technology event.
+                </p>
+              </div>
+
+              <div class="host-request-status">
+                <span class="pending">Pending</span>
+              </div>
+
+              <div class="host-request-actions">
+                <button class="host-request-view">
+                  <i class="fa-solid fa-eye"></i>
+                  View
+                </button>
+
+                <button class="host-request-approve">
+                  <i class="fa-solid fa-check"></i>
+                  Approve
+                </button>
+
+                <button class="host-request-reject">
+                  <i class="fa-solid fa-xmark"></i>
+                  Reject
+                </button>
+              </div>
+            </article>
+
+            <!-- REQUEST 2 -->
+
+            <article class="host-request-item">
+              <div class="host-request-avatar">RM</div>
+
+              <div class="host-request-main">
+                <div class="host-request-name">
+                  <h3>Riya Maharjan</h3>
+
+                  <span>BCA24007</span>
+                </div>
+
+                <div class="host-request-info">
+                  <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    riya@student.edu.np
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar"></i>
+                    Requested: 20 Aug 2026
+                  </span>
+                </div>
+
+                <p class="host-request-reason">
+                  Interested in organizing an inter-college cultural program.
+                </p>
+              </div>
+
+              <div class="host-request-status">
+                <span class="pending">Pending</span>
+              </div>
+
+              <div class="host-request-actions">
+                <button class="host-request-view">
+                  <i class="fa-solid fa-eye"></i>
+                  View
+                </button>
+
+                <button class="host-request-approve">
+                  <i class="fa-solid fa-check"></i>
+                  Approve
+                </button>
+
+                <button class="host-request-reject">
+                  <i class="fa-solid fa-xmark"></i>
+                  Reject
+                </button>
+              </div>
+            </article>
+
+            <!-- REQUEST 3 -->
+
+            <article class="host-request-item">
+              <div class="host-request-avatar">NS</div>
+
+              <div class="host-request-main">
+                <div class="host-request-name">
+                  <h3>Nischal Shrestha</h3>
+
+                  <span>BCA24008</span>
+                </div>
+
+                <div class="host-request-info">
+                  <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    nischal@student.edu.np
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar"></i>
+                    Requested: 19 Aug 2026
+                  </span>
+                </div>
+
+                <p class="host-request-reason">
+                  Wants to organize a student sports competition.
+                </p>
+              </div>
+
+              <div class="host-request-status">
+                <span class="pending">Pending</span>
+              </div>
+
+              <div class="host-request-actions">
+                <button class="host-request-view">
+                  <i class="fa-solid fa-eye"></i>
+                  View
+                </button>
+
+                <button class="host-request-approve">
+                  <i class="fa-solid fa-check"></i>
+                  Approve
+                </button>
+
+                <button class="host-request-reject">
+                  <i class="fa-solid fa-xmark"></i>
+                  Reject
+                </button>
+              </div>
+            </article>
+
+            <!-- REQUEST 4 -->
+
+            <article class="host-request-item">
+              <div class="host-request-avatar">SP</div>
+
+              <div class="host-request-main">
+                <div class="host-request-name">
+                  <h3>Samiksha Poudel</h3>
+
+                  <span>BCA24009</span>
+                </div>
+
+                <div class="host-request-info">
+                  <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    samiksha@student.edu.np
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar"></i>
+                    Requested: 18 Aug 2026
+                  </span>
+                </div>
+
+                <p class="host-request-reason">
+                  Plans to organize a student workshop and presentation.
+                </p>
+              </div>
+
+              <div class="host-request-status">
+                <span class="pending">Pending</span>
+              </div>
+
+              <div class="host-request-actions">
+                <button class="host-request-view">
+                  <i class="fa-solid fa-eye"></i>
+                  View
+                </button>
+
+                <button class="host-request-approve">
+                  <i class="fa-solid fa-check"></i>
+                  Approve
+                </button>
+
+                <button class="host-request-reject">
+                  <i class="fa-solid fa-xmark"></i>
+                  Reject
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../../../JS/admindashboard.js"></script>
   </body>
 </html>
-
+```

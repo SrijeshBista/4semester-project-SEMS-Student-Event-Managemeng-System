@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,47 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../../../css/Style.css" />
+    <link rel="icon" href="../../../img/logo.png" type="image/x-icon" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
-    <link rel="icon" href="../../../img/logo.png" type="image/x-icon" />
-
-    <title>Admin - Manage Events | SEMS</title>
+    <title>Manage Students | SEMS</title>
   </head>
 
   <body>
-         <!-- ADMIN NAVBAR -->
+    <!-- ADMIN NAVBAR -->
 
     <header id="admin-navbar">
       <div class="container">
         <div class="admin-nav">
-          <!-- Logo -->
-
           <div class="admin-logo">
-            <a href="../Homepage.html">
+            <a href="admindashboard.html">
               <img src="../../../img/logo.png" alt="SEMS Logo" />
             </a>
           </div>
 
-          <!-- Page Title -->
-
           <div class="admin-title">
-            <h2>Admin Dashboard</h2>
+            <h2>Manage Students</h2>
           </div>
-
-          <!-- Mobile Menu -->
 
           <div class="admin-menu-toggle">
             <i class="fa-solid fa-bars"></i>
           </div>
 
-          <!-- Admin Profile -->
-
           <div class="admin-profile">
-            <a href="./managenotification.html" class="admin-notification">
+            <a href="adminnotifications.html" class="admin-notification">
               <i class="fa-solid fa-bell"></i>
             </a>
 
@@ -63,17 +55,12 @@
       </div>
     </header>
 
-         <!-- SIDEBAR OVERLAY -->
-   
     <div class="admin-sidebar-overlay"></div>
 
-  
-         <!-- ADMIN LAYOUT -->
-    
+    <!-- ADMIN CONTAINER -->
 
     <div class="admin-container">
-       <!-- SIDEBAR -->
-    
+      <!-- SIDEBAR -->
 
       <aside class="admin-sidebar">
         <ul>
@@ -85,7 +72,7 @@
             </a>
           </li>
 
-          <li class="active">
+          <li>
             <a href="./manageevents.html">
               <i class="fa-solid fa-calendar-days"></i>
 
@@ -93,7 +80,7 @@
             </a>
           </li>
 
-          <li>
+          <li >
             <a href="./managestudent.html">
               <i class="fa-solid fa-user-graduate"></i>
 
@@ -117,7 +104,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="active">
             <a href="managenotification.html">
               <i class="fa-solid fa-bell"></i>
 
@@ -143,8 +130,293 @@
         </ul>
       </aside>
 
-      
+      <!-- MAIN CONTENT -->
 
-    <script src="../../../JS/admin.js"></script>
+      <main class="admin-content admin-students-page">
+        <!-- PAGE HEADER -->
+
+        <section class="student-page-heading">
+          <div>
+            <h1>Students</h1>
+
+            <p>
+              View and manage registered students in the Student Event
+              Management System.
+            </p>
+          </div>
+        </section>
+
+        <!-- STATISTICS -->
+
+        <section class="student-statistics">
+          <div class="student-stat-card">
+            <div class="student-stat-icon blue">
+              <i class="fa-solid fa-users"></i>
+            </div>
+
+            <div>
+              <h3>356</h3>
+              <p>Total Students</p>
+            </div>
+          </div>
+
+          <div class="student-stat-card">
+            <div class="student-stat-icon green">
+              <i class="fa-solid fa-user-check"></i>
+            </div>
+
+            <div>
+              <h3>342</h3>
+              <p>Active Students</p>
+            </div>
+          </div>
+
+          <div class="student-stat-card">
+            <div class="student-stat-icon orange">
+              <i class="fa-solid fa-user-clock"></i>
+            </div>
+
+            <div>
+              <h3>14</h3>
+              <p>Inactive Students</p>
+            </div>
+          </div>
+
+          <div class="student-stat-card">
+            <div class="student-stat-icon purple">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+
+            <div>
+              <h3>184</h3>
+              <p>Event Registrations</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEARCH AND FILTER -->
+
+        <section class="student-tools">
+          <div class="student-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+              type="text"
+              placeholder="Search student name, ID or email..."
+            />
+          </div>
+
+          <div class="student-filter">
+            <label for="studentStatus"> Status </label>
+
+            <select id="studentStatus">
+              <option value="all">All Students</option>
+
+              <option value="active">Active</option>
+
+              <option value="inactive">Inactive</option>
+            </select>
+          </div>
+        </section>
+
+        <!-- STUDENT LIST -->
+
+        <section class="student-list-section">
+          <div class="student-list-header">
+            <div>
+              <h2>Registered Students</h2>
+
+              <p>Students who have created accounts on SEMS.</p>
+            </div>
+
+            <span>356 Students</span>
+          </div>
+
+          <div class="student-list">
+            <!-- STUDENT 1 -->
+
+            <article class="student-item">
+              <div class="student-avatar">SB</div>
+
+              <div class="student-main">
+                <div class="student-name">
+                  <h3>Srijesh Bista</h3>
+
+                  <span>BCA24001</span>
+                </div>
+
+                <div class="student-meta">
+                  <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    srijesh@student.edu.np
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar"></i>
+                    Joined: 12 Aug 2026
+                  </span>
+                </div>
+              </div>
+
+              <div class="student-status">
+                <span class="active"> Active </span>
+              </div>
+
+              <div class="student-actions">
+                <button class="student-action view" title="View Student">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+
+                <button class="student-action edit" title="Edit Student">
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+
+                <button
+                  class="student-action disable"
+                  title="Deactivate Student"
+                >
+                  <i class="fa-solid fa-user-slash"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- STUDENT 2 -->
+
+            <article class="student-item">
+              <div class="student-avatar">RS</div>
+
+              <div class="student-main">
+                <div class="student-name">
+                  <h3>Rahul Sharma</h3>
+
+                  <span>BCA24002</span>
+                </div>
+
+                <div class="student-meta">
+                  <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    rahul@student.edu.np
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar"></i>
+                    Joined: 10 Aug 2026
+                  </span>
+                </div>
+              </div>
+
+              <div class="student-status">
+                <span class="active"> Active </span>
+              </div>
+
+              <div class="student-actions">
+                <button class="student-action view">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+
+                <button class="student-action edit">
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+
+                <button class="student-action disable">
+                  <i class="fa-solid fa-user-slash"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- STUDENT 3 -->
+
+            <article class="student-item">
+              <div class="student-avatar">AT</div>
+
+              <div class="student-main">
+                <div class="student-name">
+                  <h3>Anisha Thapa</h3>
+
+                  <span>BCA24003</span>
+                </div>
+
+                <div class="student-meta">
+                  <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    anisha@student.edu.np
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar"></i>
+                    Joined: 08 Aug 2026
+                  </span>
+                </div>
+              </div>
+
+              <div class="student-status">
+                <span class="active"> Active </span>
+              </div>
+
+              <div class="student-actions">
+                <button class="student-action view">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+
+                <button class="student-action edit">
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+
+                <button class="student-action disable">
+                  <i class="fa-solid fa-user-slash"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- STUDENT 4 -->
+
+            <article class="student-item">
+              <div class="student-avatar">SK</div>
+
+              <div class="student-main">
+                <div class="student-name">
+                  <h3>Suman KC</h3>
+
+                  <span>BCA24004</span>
+                </div>
+
+                <div class="student-meta">
+                  <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    suman@student.edu.np
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-calendar"></i>
+                    Joined: 05 Aug 2026
+                  </span>
+                </div>
+              </div>
+
+              <div class="student-status">
+                <span class="inactive"> Inactive </span>
+              </div>
+
+              <div class="student-actions">
+                <button class="student-action view">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+
+                <button class="student-action edit">
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+
+                <button class="student-action activate">
+                  <i class="fa-solid fa-user-check"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../../JS/admindashboard.js"></script>
   </body>
 </html>
+```

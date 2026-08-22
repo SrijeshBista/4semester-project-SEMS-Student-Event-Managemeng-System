@@ -5,47 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../../../css/Style.css" />
+    <link rel="icon" href="../../../img/logo.png" type="image/x-icon" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
-    <link rel="icon" href="../../../img/logo.png" type="image/x-icon" />
-
-    <title>Admin - Manage Events | SEMS</title>
+    <title>Admin Profile | SEMS</title>
   </head>
 
   <body>
-         <!-- ADMIN NAVBAR -->
+    <!-- =========================
+       ADMIN NAVBAR
+  ========================== -->
 
     <header id="admin-navbar">
       <div class="container">
         <div class="admin-nav">
-          <!-- Logo -->
-
           <div class="admin-logo">
-            <a href="../Homepage.html">
+            <a href="admindashboard.html">
               <img src="../../../img/logo.png" alt="SEMS Logo" />
             </a>
           </div>
 
-          <!-- Page Title -->
-
           <div class="admin-title">
-            <h2>Admin Dashboard</h2>
+            <h2>Admin Profile</h2>
           </div>
-
-          <!-- Mobile Menu -->
 
           <div class="admin-menu-toggle">
             <i class="fa-solid fa-bars"></i>
           </div>
 
-          <!-- Admin Profile -->
-
           <div class="admin-profile">
-            <a href="./managenotification.html" class="admin-notification">
+            <a href="adminnotifications.html" class="admin-notification">
               <i class="fa-solid fa-bell"></i>
             </a>
 
@@ -63,17 +56,14 @@
       </div>
     </header>
 
-         <!-- SIDEBAR OVERLAY -->
-   
     <div class="admin-sidebar-overlay"></div>
 
-  
-         <!-- ADMIN LAYOUT -->
-    
+    <!-- =========================
+       ADMIN CONTAINER
+  ========================== -->
 
     <div class="admin-container">
-       <!-- SIDEBAR -->
-    
+      <!-- SIDEBAR -->
 
       <aside class="admin-sidebar">
         <ul>
@@ -85,7 +75,7 @@
             </a>
           </li>
 
-          <li class="active">
+          <li>
             <a href="./manageevents.html">
               <i class="fa-solid fa-calendar-days"></i>
 
@@ -125,7 +115,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="active">
             <a href="manageprofile.html">
               <i class="fa-solid fa-user"></i>
 
@@ -143,9 +133,196 @@
         </ul>
       </aside>
 
-      
+      <!-- =========================
+         MAIN CONTENT
+    ========================== -->
 
-    <script src="../../../JS/admin.js"></script>
+      <main class="admin-content admin-profile-page">
+        <!-- PROFILE HEADER -->
+
+        <section class="profile-header-card">
+          <div class="profile-avatar-large">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+
+          <div class="profile-header-info">
+            <h1>Administrator</h1>
+
+            <p>System Administrator</p>
+
+            <span>
+              <i class="fa-solid fa-circle-check"></i>
+              Active Account
+            </span>
+          </div>
+        </section>
+
+        <!-- PROFILE CONTENT -->
+
+        <div class="profile-grid">
+          <!-- PERSONAL INFORMATION -->
+
+          <section class="profile-section">
+            <div class="profile-section-header">
+              <div>
+                <h2>Personal Information</h2>
+
+                <p>Manage your administrator account information.</p>
+              </div>
+
+              <i class="fa-solid fa-user"></i>
+            </div>
+
+            <form class="profile-form">
+              <div class="profile-form-group">
+                <label for="adminName"> Full Name </label>
+
+                <div class="profile-input">
+                  <i class="fa-solid fa-user"></i>
+
+                  <input type="text" id="adminName" value="Administrator" />
+                </div>
+              </div>
+
+              <div class="profile-form-group">
+                <label for="adminEmail"> Email Address </label>
+
+                <div class="profile-input">
+                  <i class="fa-solid fa-envelope"></i>
+
+                  <input
+                    type="email"
+                    id="adminEmail"
+                    value="admin@sems.edu.np"
+                  />
+                </div>
+              </div>
+
+              <div class="profile-form-group">
+                <label for="adminPhone"> Phone Number </label>
+
+                <div class="profile-input">
+                  <i class="fa-solid fa-phone"></i>
+
+                  <input type="tel" id="adminPhone" value="9800000000" />
+                </div>
+              </div>
+
+              <div class="profile-form-group">
+                <label for="adminRole"> Role </label>
+
+                <div class="profile-input profile-disabled">
+                  <i class="fa-solid fa-shield-halved"></i>
+
+                  <input
+                    type="text"
+                    id="adminRole"
+                    value="System Administrator"
+                    disabled
+                  />
+                </div>
+              </div>
+
+              <button type="button" class="profile-save-btn">
+                <i class="fa-solid fa-floppy-disk"></i>
+                Save Changes
+              </button>
+            </form>
+          </section>
+
+          <!-- ACCOUNT SECURITY -->
+
+          <section class="profile-section">
+            <div class="profile-section-header">
+              <div>
+                <h2>Account Security</h2>
+
+                <p>Manage your login credentials and security.</p>
+              </div>
+
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <div class="security-item">
+              <div class="security-icon">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+
+              <div class="security-info">
+                <h3>Password</h3>
+
+                <p>Last changed recently</p>
+              </div>
+
+              <button type="button" class="security-btn">Change</button>
+            </div>
+
+            <div class="security-item">
+              <div class="security-icon">
+                <i class="fa-solid fa-envelope-circle-check"></i>
+              </div>
+
+              <div class="security-info">
+                <h3>Email Verification</h3>
+
+                <p>Your email address is verified.</p>
+              </div>
+
+              <span class="verified"> Verified </span>
+            </div>
+
+            <div class="security-item">
+              <div class="security-icon">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+              </div>
+
+              <div class="security-info">
+                <h3>Last Login</h3>
+
+                <p>Today</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ADMIN ACCOUNT INFORMATION -->
+
+        <section class="profile-section account-info-section">
+          <div class="profile-section-header">
+            <div>
+              <h2>Account Information</h2>
+
+              <p>Information about this administrator account.</p>
+            </div>
+
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+
+          <div class="account-info-grid">
+            <div>
+              <span>Account ID</span>
+              <strong>ADMIN001</strong>
+            </div>
+
+            <div>
+              <span>Account Type</span>
+              <strong>Administrator</strong>
+            </div>
+
+            <div>
+              <span>Account Status</span>
+              <strong class="account-active"> Active </strong>
+            </div>
+
+            <div>
+              <span>Member Since</span>
+              <strong>2026</strong>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../../JS/admindashboard.js"></script>
   </body>
 </html>
-

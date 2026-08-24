@@ -1,0 +1,597 @@
+
+/* ====================================================
+   EVENT HOST - MY EVENTS
+===================================================== */
+
+.host-events-page {
+  padding: 35px;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.host-events-header {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  margin-bottom: 25px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.host-page-label {
+  display: inline-block;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  padding: 6px 11px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.host-events-header h1 {
+  color: #1e293b;
+  font-size: 30px;
+
+  margin-bottom: 7px;
+}
+
+.host-events-header p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.host-create-event-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  padding: 13px 18px;
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition: 0.2s;
+}
+
+.host-create-event-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.host-event-stats {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+
+  margin-bottom: 25px;
+}
+
+.host-event-stat {
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.host-event-stat-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+}
+
+.host-event-stat-icon.blue {
+  background: #2563eb;
+}
+
+.host-event-stat-icon.green {
+  background: #10b981;
+}
+
+.host-event-stat-icon.orange {
+  background: #f59e0b;
+}
+
+.host-event-stat-icon.red {
+  background: #ef4444;
+}
+
+.host-event-stat strong {
+  display: block;
+
+  color: #1e293b;
+
+  font-size: 24px;
+
+  margin-bottom: 2px;
+}
+
+.host-event-stat span {
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   EVENTS BOX
+========================= */
+
+.host-events-box {
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 25px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================
+   TOOLBAR
+========================= */
+
+.host-events-toolbar {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 15px;
+}
+
+.host-search {
+  position: relative;
+
+  width: 100%;
+  max-width: 450px;
+}
+
+.host-search i {
+  position: absolute;
+
+  left: 14px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #94a3b8;
+}
+
+.host-search input,
+.host-filter select {
+  width: 100%;
+
+  height: 44px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #334155;
+
+  font-size: 13px;
+}
+
+.host-search input {
+  padding: 0 15px 0 40px;
+}
+
+.host-search input:focus,
+.host-filter select:focus {
+  border-color: #2563eb;
+}
+
+.host-filter select {
+  width: 170px;
+
+  padding: 0 12px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   EVENT CARD
+========================= */
+
+.host-event-card {
+  display: grid;
+
+  grid-template-columns:
+    55px
+    minmax(0, 1fr)
+    auto
+    auto
+    auto;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.host-event-card:last-child {
+  border-bottom: none;
+}
+
+.host-event-card-icon {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 13px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  font-size: 20px;
+}
+
+.host-event-card-icon.blue {
+  background: #2563eb;
+}
+
+.host-event-card-icon.green {
+  background: #10b981;
+}
+
+.host-event-card-icon.orange {
+  background: #f59e0b;
+}
+
+.host-event-card-icon.purple {
+  background: #8b5cf6;
+}
+
+.host-event-card-info {
+  min-width: 0;
+}
+
+.host-event-card-info h2 {
+  color: #1e293b;
+
+  font-size: 15px;
+
+  margin-bottom: 7px;
+}
+
+.host-event-card-info p {
+  display: inline-block;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  margin-right: 15px;
+}
+
+.host-event-card-info p i {
+  color: #2563eb;
+
+  margin-right: 5px;
+}
+
+.host-event-card-participants {
+  text-align: center;
+}
+
+.host-event-card-participants strong {
+  display: block;
+
+  color: #1e293b;
+
+  font-size: 16px;
+}
+
+.host-event-card-participants span {
+  color: #94a3b8;
+
+  font-size: 10px;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.host-event-status {
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.host-event-status.approved {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.host-event-status.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.host-event-status.rejected {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+
+/* =========================
+   ACTIONS
+========================= */
+
+.host-event-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+.host-event-actions a,
+.host-event-actions button {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  background: #f1f5f9;
+
+  color: #475569;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.host-event-actions a:hover {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.host-event-actions button:hover {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .host-events-page {
+    padding: 28px;
+  }
+
+  .host-event-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .host-event-card {
+    grid-template-columns:
+      55px
+      minmax(0, 1fr)
+      auto
+      auto;
+  }
+
+  .host-event-card-participants {
+    display: none;
+  }
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+  .host-events-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .host-create-event-btn {
+    width: 100%;
+  }
+
+  .host-events-toolbar {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+  .host-search {
+    max-width: none;
+  }
+
+  .host-filter select {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .host-events-page {
+    padding: 20px;
+  }
+
+  .host-events-header {
+    padding: 22px;
+  }
+
+  .host-events-header h1 {
+    font-size: 25px;
+  }
+
+  .host-event-stats {
+    gap: 12px;
+  }
+
+  .host-event-stat {
+    padding: 16px;
+  }
+
+  .host-events-box {
+    padding: 20px;
+  }
+
+  .host-event-card {
+    grid-template-columns:
+      48px
+      minmax(0, 1fr);
+
+    gap: 12px;
+
+    position: relative;
+
+    padding: 18px 0;
+  }
+
+  .host-event-card-icon {
+    width: 45px;
+    height: 45px;
+
+    font-size: 17px;
+  }
+
+  .host-event-status {
+    grid-column: 2;
+
+    justify-self: start;
+  }
+
+  .host-event-actions {
+    grid-column: 2;
+
+    justify-self: start;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+  .host-events-page {
+    padding: 15px;
+  }
+
+  .host-events-header {
+    padding: 18px;
+  }
+
+  .host-events-header h1 {
+    font-size: 22px;
+  }
+
+  .host-event-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .host-events-box {
+    padding: 16px;
+  }
+
+  .host-event-card-info h2 {
+    font-size: 14px;
+  }
+
+  .host-event-card-info p {
+    display: block;
+
+    margin-bottom: 4px;
+  }
+
+}

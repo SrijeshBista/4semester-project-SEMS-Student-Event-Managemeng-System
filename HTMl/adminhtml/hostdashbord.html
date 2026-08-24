@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../css/Style.css" />
+    <link rel="icon" href="../../img/logo.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <title>Event Host Dashboard | SEMS</title>
+  </head>
+
+  <body>
+    <!-- =========================
+       HOST NAVBAR
+  ========================== -->
+
+    <header id="admin-navbar">
+      <div class="container">
+        <div class="admin-nav">
+          <div class="admin-logo">
+            <a href="hostdashboard.html">
+              <img src="../../img/logo.png" alt="SEMS Logo" />
+            </a>
+          </div>
+
+          <div class="admin-title">
+            <h2>Event Host Dashboard</h2>
+          </div>
+
+          <div class="admin-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <div class="admin-profile">
+            <a href="hostnotifications.html" class="admin-notification">
+              <i class="fa-solid fa-bell"></i>
+            </a>
+
+            <div class="admin-profile-info">
+              <div class="admin-avatar">
+                <i class="fa-solid fa-user"></i>
+              </div>
+
+              <span>Event Host</span>
+
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="admin-sidebar-overlay"></div>
+
+    <!-- =========================
+       HOST CONTAINER
+  ========================== -->
+
+    <div class="admin-container">
+      <!-- =========================
+         HOST SIDEBAR
+    ========================== -->
+
+      <aside class="admin-sidebar">
+        <ul>
+          <li class="active">
+            <a href="hostdashboard.html">
+              <i class="fa-solid fa-house"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../becameahost/hostevent.html">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span>My Events</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../becameahost/createevent.html">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span>Create Event</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../becameahost/participants.html">
+              <i class="fa-solid fa-users"></i>
+              <span>Participants</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../becameahost/hostnotifications.html">
+              <i class="fa-solid fa-bell"></i>
+              <span>Notifications</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../becameahost/hostprofile.html">
+              <i class="fa-solid fa-user"></i>
+              <span>My Profile</span>
+            </a>
+          </li>
+
+          <li class="admin-logout">
+            <a href="../loginsignup/Adminlogin.html">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+      <main class="admin-content host-dashboard-page">
+        <!-- =========================
+           WELCOME
+      ========================== -->
+
+        <section class="host-welcome">
+          <div>
+            <span class="host-welcome-label"> Event Host Panel </span>
+
+            <h1>Welcome back, Event Host! 👋</h1>
+
+            <p>
+              Manage your college events, monitor registrations, and keep track
+              of your event activities from one place.
+            </p>
+          </div>
+
+          <a href="createevent.html" class="host-create-btn">
+            <i class="fa-solid fa-plus"></i>
+            Create New Event
+          </a>
+        </section>
+
+        <!-- =========================
+           STATISTICS
+      ========================== -->
+
+        <section class="host-statistics">
+          <div class="host-stat-card">
+            <div class="host-stat-icon blue">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+
+            <div>
+              <h2>12</h2>
+              <p>Total Events</p>
+            </div>
+          </div>
+
+          <div class="host-stat-card">
+            <div class="host-stat-icon orange">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+
+            <div>
+              <h2>3</h2>
+              <p>Pending Approval</p>
+            </div>
+          </div>
+
+          <div class="host-stat-card">
+            <div class="host-stat-icon green">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <div>
+              <h2>8</h2>
+              <p>Approved Events</p>
+            </div>
+          </div>
+
+          <div class="host-stat-card">
+            <div class="host-stat-icon purple">
+              <i class="fa-solid fa-users"></i>
+            </div>
+
+            <div>
+              <h2>486</h2>
+              <p>Total Participants</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- =========================
+           MY EVENTS
+      ========================== -->
+
+        <section class="host-section">
+          <div class="host-section-header">
+            <div>
+              <h2>My Recent Events</h2>
+
+              <p>Recently created and managed events.</p>
+            </div>
+
+            <a href="myevents.html" class="host-view-all">
+              View All
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="host-events-list">
+            <!-- EVENT 1 -->
+
+            <article class="host-event-item">
+              <div class="host-event-icon blue">
+                <i class="fa-solid fa-code"></i>
+              </div>
+
+              <div class="host-event-info">
+                <h3>Web Development Workshop</h3>
+
+                <p>
+                  <i class="fa-solid fa-calendar"></i>
+                  September 15, 2026
+                </p>
+              </div>
+
+              <div class="host-event-participants">
+                <strong>86</strong>
+                <span>Participants</span>
+              </div>
+
+              <span class="host-status approved"> Approved </span>
+
+              <a href="../eventdetail.html" class="host-event-view">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </article>
+
+            <!-- EVENT 2 -->
+
+            <article class="host-event-item">
+              <div class="host-event-icon purple">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+
+              <div class="host-event-info">
+                <h3>AI & Technology Seminar</h3>
+
+                <p>
+                  <i class="fa-solid fa-calendar"></i>
+                  September 22, 2026
+                </p>
+              </div>
+
+              <div class="host-event-participants">
+                <strong>124</strong>
+                <span>Participants</span>
+              </div>
+
+              <span class="host-status pending"> Pending </span>
+
+              <a href="../eventdetail.html" class="host-event-view">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </article>
+
+            <!-- EVENT 3 -->
+
+            <article class="host-event-item">
+              <div class="host-event-icon orange">
+                <i class="fa-solid fa-gamepad"></i>
+              </div>
+
+              <div class="host-event-info">
+                <h3>Inter College Gaming Tournament</h3>
+
+                <p>
+                  <i class="fa-solid fa-calendar"></i>
+                  October 5, 2026
+                </p>
+              </div>
+
+              <div class="host-event-participants">
+                <strong>192</strong>
+                <span>Participants</span>
+              </div>
+
+              <span class="host-status approved"> Approved </span>
+
+              <a href="../eventdetail.html" class="host-event-view">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <!-- =========================
+           QUICK ACTIONS
+      ========================== -->
+
+        <section class="host-section">
+          <div class="host-section-header">
+            <div>
+              <h2>Quick Actions</h2>
+
+              <p>Frequently used event management tools.</p>
+            </div>
+          </div>
+
+          <div class="host-actions">
+            <a href="createevent.html" class="host-action-card">
+              <div class="host-action-icon blue">
+                <i class="fa-solid fa-calendar-plus"></i>
+              </div>
+
+              <div>
+                <h3>Create Event</h3>
+
+                <p>Submit a new event for approval.</p>
+              </div>
+
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+
+            <a href="myevents.html" class="host-action-card">
+              <div class="host-action-icon green">
+                <i class="fa-solid fa-calendar-check"></i>
+              </div>
+
+              <div>
+                <h3>Manage Events</h3>
+
+                <p>View and manage your events.</p>
+              </div>
+
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+
+            <a href="participants.html" class="host-action-card">
+              <div class="host-action-icon purple">
+                <i class="fa-solid fa-users"></i>
+              </div>
+
+              <div>
+                <h3>Participants</h3>
+
+                <p>View registered participants.</p>
+              </div>
+
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </section>
+
+        <!-- =========================
+           RECENT ACTIVITY
+      ========================== -->
+
+        <section class="host-section">
+          <div class="host-section-header">
+            <div>
+              <h2>Recent Activity</h2>
+
+              <p>Latest updates related to your events.</p>
+            </div>
+          </div>
+
+          <div class="host-activity">
+            <div class="host-activity-item">
+              <div class="host-activity-icon green">
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <div>
+                <h3>Event Approved</h3>
+
+                <p>
+                  Web Development Workshop was approved by the administrator.
+                </p>
+
+                <span> 2 hours ago </span>
+              </div>
+            </div>
+
+            <div class="host-activity-item">
+              <div class="host-activity-icon blue">
+                <i class="fa-solid fa-user-plus"></i>
+              </div>
+
+              <div>
+                <h3>New Registration</h3>
+
+                <p>A new student registered for AI & Technology Seminar.</p>
+
+                <span> 5 hours ago </span>
+              </div>
+            </div>
+
+            <div class="host-activity-item">
+              <div class="host-activity-icon orange">
+                <i class="fa-solid fa-paper-plane"></i>
+              </div>
+
+              <div>
+                <h3>Event Submitted</h3>
+
+                <p>
+                  Inter College Gaming Tournament was submitted for approval.
+                </p>
+
+                <span> Yesterday </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../../JS/admindashboard.js"></script>
+  </body>
+</html>
+```

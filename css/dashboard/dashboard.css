@@ -1,3 +1,18 @@
 @import "./student/student.css";
+
+/* Admin Dashbord css  */
 @import "./admin/admin.css";
+@import "./admin/manageevents.css";
+@import "./admin/manageeventhostrequest.css";
+@import "./admin/manageeventhost.css";
+@import "./admin/managenotification.css";
+@import "./admin/manageprofile.css";
+@import "./admin/managestudent.css";
+
+/* became a host  */
 @import "./becameahost/becameahost.css";
+@import "./becameahost/hostevent.css";
+@import "./becameahost/createevent.css";
+@import "./becameahost/participants.css";
+@import "./becameahost/becamehostnotification.css";
+@import "./becameahost/hostprofile.css";

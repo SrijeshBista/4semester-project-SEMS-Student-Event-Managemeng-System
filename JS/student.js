@@ -29,7 +29,7 @@ loginForm.addEventListener("submit", function (e) {
 
         // Host
         else if (email === "host@gmail.com" && password === "host1234") {
-            window.location.href = "";
+            window.location.href = "../adminhtml/hostdashbord.html";
         }
 
         // Admin

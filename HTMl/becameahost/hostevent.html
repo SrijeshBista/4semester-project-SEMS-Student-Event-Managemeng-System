@@ -1,0 +1,390 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../css/Style.css" />
+    <link rel="icon" href="../../img/logo.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <title>My Events | SEMS</title>
+  </head>
+
+  <body>
+    <!-- =========================
+       NAVBAR
+  ========================== -->
+
+    <header id="admin-navbar">
+      <div class="container">
+        <div class="admin-nav">
+          <div class="admin-logo">
+            <a href="hostdashboard.html">
+              <img src="../../img/logo.png" alt="SEMS Logo" />
+            </a>
+          </div>
+
+          <div class="admin-title">
+            <h2>Host Dashboard</h2>
+          </div>
+
+          <div class="admin-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <div class="admin-profile">
+            <a href="hostnotifications.html" class="admin-notification">
+              <i class="fa-solid fa-bell"></i>
+            </a>
+
+            <div class="admin-profile-info">
+              <div class="admin-avatar">
+                <i class="fa-solid fa-user"></i>
+              </div>
+
+              <span>Event Host</span>
+
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="admin-sidebar-overlay"></div>
+
+    <!-- =========================
+       MAIN CONTAINER
+  ========================== -->
+
+    <div class="admin-container">
+      <!-- SIDEBAR -->
+
+      <aside class="admin-sidebar">
+        <ul>
+          <li>
+            <a href="../adminhtml/hostdashbord.html">
+              <i class="fa-solid fa-house"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+
+          <li class="active">
+            <a href="../becameahost/hostevent.html">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span>My Events</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../becameahost/createevent.html">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span>Create Event</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../becameahost/participant.html">
+              <i class="fa-solid fa-users"></i>
+              <span>Participants</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../becameahost/hostnotification.html">
+              <i class="fa-solid fa-bell"></i>
+              <span>Notifications</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../becameahost/hostprofile.html">
+              <i class="fa-solid fa-user"></i>
+              <span>My Profile</span>
+            </a>
+          </li>
+
+          <li class="admin-logout">
+            <a href="../loginsignup/Adminlogin.html">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- =========================
+         CONTENT
+    ========================== -->
+
+      <main class="admin-content host-events-page">
+        <!-- PAGE HEADER -->
+
+        <section class="host-events-header">
+          <div>
+            <span class="host-page-label">Event Management</span>
+
+            <h1>My Events</h1>
+
+            <p>Manage all events you have created and submitted.</p>
+          </div>
+
+          <a href="createevent.html" class="host-create-event-btn">
+            <i class="fa-solid fa-plus"></i>
+            Create New Event
+          </a>
+        </section>
+
+        <!-- STATISTICS -->
+
+        <section class="host-event-stats">
+          <div class="host-event-stat">
+            <div class="host-event-stat-icon blue">
+              <i class="fa-solid fa-calendar"></i>
+            </div>
+
+            <div>
+              <strong>12</strong>
+              <span>Total Events</span>
+            </div>
+          </div>
+
+          <div class="host-event-stat">
+            <div class="host-event-stat-icon green">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <div>
+              <strong>8</strong>
+              <span>Approved</span>
+            </div>
+          </div>
+
+          <div class="host-event-stat">
+            <div class="host-event-stat-icon orange">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+
+            <div>
+              <strong>3</strong>
+              <span>Pending</span>
+            </div>
+          </div>
+
+          <div class="host-event-stat">
+            <div class="host-event-stat-icon red">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+
+            <div>
+              <strong>1</strong>
+              <span>Rejected</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- EVENT LIST -->
+
+        <section class="host-events-box">
+          <div class="host-events-toolbar">
+            <div class="host-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+
+              <input type="text" placeholder="Search your events..." />
+            </div>
+
+            <div class="host-filter">
+              <select>
+                <option value="all">All Events</option>
+                <option value="approved">Approved</option>
+                <option value="pending">Pending</option>
+                <option value="rejected">Rejected</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- EVENT CARD 1 -->
+
+          <article class="host-event-card">
+            <div class="host-event-card-icon blue">
+              <i class="fa-solid fa-code"></i>
+            </div>
+
+            <div class="host-event-card-info">
+              <h2>Web Development Workshop</h2>
+
+              <p>
+                <i class="fa-solid fa-calendar"></i>
+                September 15, 2026
+              </p>
+
+              <p>
+                <i class="fa-solid fa-location-dot"></i>
+                College Auditorium
+              </p>
+            </div>
+
+            <div class="host-event-card-participants">
+              <strong>86</strong>
+              <span>Participants</span>
+            </div>
+
+            <span class="host-event-status approved"> Approved </span>
+
+            <div class="host-event-actions">
+              <a href="../eventdetail.html" title="View">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+
+              <a href="editevent.html" title="Edit">
+                <i class="fa-solid fa-pen"></i>
+              </a>
+
+              <button title="Delete">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- EVENT CARD 2 -->
+
+          <article class="host-event-card">
+            <div class="host-event-card-icon purple">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+
+            <div class="host-event-card-info">
+              <h2>AI & Technology Seminar</h2>
+
+              <p>
+                <i class="fa-solid fa-calendar"></i>
+                September 22, 2026
+              </p>
+
+              <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Seminar Hall
+              </p>
+            </div>
+
+            <div class="host-event-card-participants">
+              <strong>124</strong>
+              <span>Participants</span>
+            </div>
+
+            <span class="host-event-status pending"> Pending </span>
+
+            <div class="host-event-actions">
+              <a href="../eventdetail.html" title="View">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+
+              <a href="editevent.html" title="Edit">
+                <i class="fa-solid fa-pen"></i>
+              </a>
+
+              <button title="Delete">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- EVENT CARD 3 -->
+
+          <article class="host-event-card">
+            <div class="host-event-card-icon orange">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+
+            <div class="host-event-card-info">
+              <h2>Inter College Gaming Tournament</h2>
+
+              <p>
+                <i class="fa-solid fa-calendar"></i>
+                October 5, 2026
+              </p>
+
+              <p>
+                <i class="fa-solid fa-location-dot"></i>
+                College Ground
+              </p>
+            </div>
+
+            <div class="host-event-card-participants">
+              <strong>192</strong>
+              <span>Participants</span>
+            </div>
+
+            <span class="host-event-status approved"> Approved </span>
+
+            <div class="host-event-actions">
+              <a href="../eventdetail.html" title="View">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+
+              <a href="editevent.html" title="Edit">
+                <i class="fa-solid fa-pen"></i>
+              </a>
+
+              <button title="Delete">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- EVENT CARD 4 -->
+
+          <article class="host-event-card">
+            <div class="host-event-card-icon green">
+              <i class="fa-solid fa-microphone"></i>
+            </div>
+
+            <div class="host-event-card-info">
+              <h2>Student Leadership Conference</h2>
+
+              <p>
+                <i class="fa-solid fa-calendar"></i>
+                October 18, 2026
+              </p>
+
+              <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Main Hall
+              </p>
+            </div>
+
+            <div class="host-event-card-participants">
+              <strong>0</strong>
+              <span>Participants</span>
+            </div>
+
+            <span class="host-event-status rejected"> Rejected </span>
+
+            <div class="host-event-actions">
+              <a href="../eventdetail.html" title="View">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+
+              <a href="editevent.html" title="Edit">
+                <i class="fa-solid fa-pen"></i>
+              </a>
+
+              <button title="Delete">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="../../JS/admindashboard.js"></script>
+  </body>
+</html>
+
